@@ -2,7 +2,7 @@
 title: Data Resources
 type: blog
 description: |
-  A place to collect data resources used in the other sections.
+  A place to collect data resources used in the other sections of my website.
 author: "Laura Briggs"
 show_post_thumbnail: true
 show_author_byline: false
