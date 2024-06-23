@@ -37,7 +37,7 @@ links:
 - icon: table
   icon_pack: fa
   name: DATA
-  url: "/dataresource/2024-03-18-nero_instructions/index"
+  url: "/dataresource/2024-03-18-nero_dataset/index"
 - icon: r-project
   icon_pack: fab
   name: R SCRIPT
