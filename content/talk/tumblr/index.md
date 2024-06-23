@@ -33,4 +33,4 @@ links:
   url: https://shorturl.at/tICVy
 ---
 
-* In just ten minutes, I dropped references to Tumblr Ancients, Neil Gaiman, and Jurassic Park while arguing that commenting on social media doesn't imply consent to being part of an academic research study. 
+* In just ten minutes, I dropped references to Tumblr Ancients, Neil Gaiman, and *Jurassic Park* while arguing that commenting on social media doesn't imply consent to being part of an academic research study. 
