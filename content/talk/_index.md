@@ -1,5 +1,6 @@
 ---
 title: Presentations
+type: talk
 description: |
   Materials from my presentations, including slides, whiteboards, R scripts, and other resources that can be shared.
 author: Laura Briggs
@@ -27,6 +28,7 @@ sidebar:
 
 # set up common front matter for all pages inside blog/
 cascade:
+  type: talk
   author: "Laura Briggs"
   show_author_byline: true
   show_post_date: true
