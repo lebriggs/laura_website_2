@@ -11,7 +11,7 @@ intro: |
   Additionally, I'm considering writing a proposal for an upcoming data librarian conference. I would love to give a workshop on creating interactive maps in R using Leaflet and Shiny to showcase the power of R for data visualization. Deploying a recent map was surprisingly difficult, and I wanted to share a few tricks that I learned along the way.
 show_outro: true
 outro: |
-  <i class="fas fa-hand-spock"></i> Thank you for visiting my site!
+  #<i class="fas fa-hand-spock"></i> Thank you for visiting my site!
 ---
 
 ** index doesn't contain a body, just front matter above.
