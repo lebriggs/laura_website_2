@@ -18,7 +18,7 @@ categories:
 - ChatGPT
 - prompt design
 - information literacy framework
-- diagram
+- process diagram
 - data cleaning
 - R Studio
 - GSD data
