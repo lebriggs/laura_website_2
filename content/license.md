@@ -1,5 +1,5 @@
 ---
-description: The Creative Commons license applied to the works found in my website.
+description: "The works on my website are covered by a Creative Commons license."
 draft: false
 layout: standard
 show_title_as_headline: true

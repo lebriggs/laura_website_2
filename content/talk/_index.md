@@ -1,12 +1,13 @@
 ---
-title: Presentations
+title: Talks that Last
 description: |
-  Materials from my presentations, including slides, whiteboards, R scripts, and other resources that can be shared.
-author: Laura Briggs
-show_post_thumbnail: false
-show_author_byline: false
+  This is a list for your talks, workshops, or other events with a time, date, and place.
+author: "The R Markdown Team @RStudio"
+show_post_thumbnail: true
+show_author_byline: true
 show_post_date: true
-show_post_time: false
+show_post_time: true
+show_button_links: true
 # for listing page layout
 layout: list # list, list-sidebar
 
@@ -14,8 +15,8 @@ layout: list # list, list-sidebar
 sidebar: 
   title: Talks that Last
   description: |
-    other events with a time, date, and place. 
     This is a list for your talks, workshops, or 
+    other events with a time, date, and place. 
     Even this sidebar offers a ton of customizations.
     
     Check out the _index.md file in the /talk folder 
@@ -27,12 +28,11 @@ sidebar:
 
 # set up common front matter for all pages inside blog/
 cascade:
-  author: "Laura Briggs"
+  author: "The R Markdown Team @RStudio"
   show_author_byline: true
   show_post_date: true
-  show_post_time: false
-  show_button_links: true
-  show_disqus_comments: false # see disqusShortname in site config
+  show_post_time: true
+  show_comments: false # see site config to choose Disqus or Utterances
   # for single-sidebar layout
   sidebar:
     text_link_label: View recent talks
