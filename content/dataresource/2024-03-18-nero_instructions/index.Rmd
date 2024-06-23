@@ -1,6 +1,6 @@
 ---
-title: "Workshop Overview:A Data Pre-Analysis Plan Using Canva"
-subtitle: ""
+title: "A Data Pre-Analysis Plan Using Canva"
+subtitle: "A Workshop Overview"
 excerpt: "Join us for a 30-minute hands-on workshop where we will explore the world of effective data pre-analysis planning using Canva. We'll use a real dataset to address common challenges, such as having a narrow perspective on your data. Together, we'll work to improve your data analysis decision-making skills.
 
 
