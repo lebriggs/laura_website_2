@@ -1,7 +1,7 @@
 ---
 title: Presentations
 description: |
-  Materials from my presentations, including slides, whiteboards, R scripts, datasets, and other resources that can be shared.
+  Materials from my workshops and presentations, including slides, whiteboards, R scripts, datasets, and other shareable resources.
 author: "Laura Briggs"
 show_post_thumbnail: false
 show_author_byline: false
