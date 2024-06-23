@@ -4,7 +4,7 @@ subtitle: ""
 excerpt: "Join us for a 30-minute hands-on workshop where we will explore the world of effective data pre-analysis planning using Canva. We'll use a real dataset to address common challenges, such as having a narrow perspective on your data. Together, we'll work to improve your data analysis decision-making skills.
 
 Have you ever wished for a visual aid to communicate your analysis plan? You're in luck! No previous knowledge of Canva is required – just bring your curiosity and enthusiasm!"
-date: 2024-03-18
+date: "2024-03-18"
 author: "Laura Briggs"
 draft: false
 images:
