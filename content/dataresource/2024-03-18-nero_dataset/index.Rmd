@@ -40,7 +40,7 @@ for (p in pkg2) {  # Iterate over each package name in the pkg2 vector
 The Nero vom Buchonia dataset contains show ratings, performance titles, and health information about the offspring of a male workingline German Shepherd Dog named G Nero vom Buchonia IGP3 KKL.
 It represents a typical dataset observed in the context of German Shepherd Dog (GSD) breeding.
 
-Note that it:
+Note that the dataset:
 
 * Uses specialized terminology that might be unfamiliar to you.
 * There are missing values in the dataset. 
