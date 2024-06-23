@@ -1,7 +1,7 @@
 baseURL = "https://lebriggs.com"
 theme = "hugo-apero"
 languageCode = "en"
-title = "Personal Website of Laura Briggs"
+title = "Personal website of Laura Briggs"
 author = "Laura Briggs"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
@@ -43,7 +43,7 @@ enableEmoji = true
   socialInFooter = true
   # Default image for social sharing and search engines. 
   # Place image file in `static` folder and specify image name here.
-  sharing_image = "img/bosco.jpg"
+  sharing_image = "/img/bosco.jpg"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
   twitter = "laura271GSD1"
   
@@ -177,12 +177,7 @@ enableEmoji = true
     title = "Contact form"
     url = "/contact/"
     weight = 2
-  [[menu.footer]]
-    name = "Contributors"
-    title = "Contributors"
-    url = "/contributors/"
-    weight = 3
-
+  
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
   [privacy.disqus]
