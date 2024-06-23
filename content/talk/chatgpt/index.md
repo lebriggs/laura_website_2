@@ -1,5 +1,5 @@
 ---
-title: "Chatgpt for Data Cleaning"
+title: "ChatGPT for Data Cleaning"
 subtitle: "Navigating the Information Literacy Framework"
 excerpt: "The whiteboard outlines a discussion on leveraging ChatGPT-3.5 to streamline data cleaning tasks in R. It features a flow diagram highlighting the iterative steps involved in the process and demonstrates how the information literacy framework is relevant. To illustrate the concept, a complex example utilizing a regular expression is provided alongside the diagram. You can download the R script for the example."
 date: "2024-01-01"
@@ -15,7 +15,7 @@ draft: false
 layout: single
 categories:
 - presentation
-- chatgpt
+- ChatGPT
 - prompt design
 - information literacy framework
 - diagram
