@@ -1,6 +1,8 @@
 ---
 author: Laura Briggs
+type: blog
 cascade:
+  type: blog
   author: Laura Briggs
   show_author_byline: true
   show_comments: false
