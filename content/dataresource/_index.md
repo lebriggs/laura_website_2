@@ -1,5 +1,6 @@
 ---
 title: Data Resources
+type: blog
 description: |
   A place to collect data resources used in the other sections.
 author: "Laura Briggs"
