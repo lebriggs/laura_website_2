@@ -1,17 +1,17 @@
 ---
 ## Configure page content in wide column
-title: "Why apéro?" # leave blank to exclude
+title: "Lately" # leave blank to exclude
 number_featured: 1 # pulling from mainSections in config.toml
 use_featured: false # if false, use most recent by date
-number_categories: 3 # set to zero to exclude
+number_categories: 0 # set to zero to exclude
 show_intro: true
 intro: |
-  Apéro is a unique kind of casual get-together in French culture, when you gather with friends and get to know each other better over some apéritifs, snacks, and anything in between. A good apéro is one where you'd happily spend a few hours just hanging out.
+  I've been thinking a lot about how to design prompts for ChatGPT to help with data cleaning in R. One area where this could be especially useful is writing regular expressions — a task I really dislike! 
   
-  I hope this theme helps you create your own virtual apéro. A place where you and your site's visitors enjoy spending time, and one that helps folks get to know you better. 
+  Additionally, I'm considering writing a proposal for an upcoming data librarian conference. I would love to give a workshop on creating interactive maps in R using Leaflet and Shiny to showcase the power of R for data visualization. Deploying a recent map was surprisingly difficult, and I wanted to share a few tricks that I learned along the way.
 show_outro: true
 outro: |
-  <i class="fas fa-glass-cheers pr2"></i>Sincere thanks to [Maëlle Salmon](https://masalmon.eu/) for her help naming this Hugo theme!
+  <i class="fas fa-hand-spock"></i> Thank you for visiting my site!
 ---
 
 ** index doesn't contain a body, just front matter above.
