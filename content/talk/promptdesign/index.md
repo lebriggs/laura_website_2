@@ -30,4 +30,4 @@ links:
   url: https://t.ly/2Jjub
 ---
 
-* I'm confident that my 2024 peaked right after I narrated the development of my mind map.
+* I'm confident that my 2024 peaked right after I narrated the development of the mind map. You know how much I love diagrams but this one has a lot going on - even for me.
