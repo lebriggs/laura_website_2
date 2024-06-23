@@ -1,0 +1,124 @@
+---
+title: "Nero vom Buchonia Offspring Data"
+subtitle: ""
+excerpt: "The Nero vom Buchonia dataset contains show ratings, performance titles, and health information about the offspring of a male workingline German Shepherd Dog named G Nero vom Buchonia IGP3 KKL."
+date: "2024-03-18"
+author: "Laura Briggs"
+draft: false
+images:
+series:
+tags:
+categories:
+  - workshop
+  - data cleaning
+  - diagram
+  - R Studio
+  - Canva
+  - data analysis
+  - GSD data
+  - active learning
+layout: single
+---
+
+```{r include=FALSE}
+
+#list of required packages
+pkg2 <- c("gt", "tidyverse", "gtExtras", "here")
+
+#install packages that are not already installed
+for (p in pkg2) {  # Iterate over each package name in the pkg2 vector
+  if (!require(p, character.only = TRUE, quietly = TRUE)) {  # Check if the package is installed
+    install.packages(p)  # Install the package if it is not installed
+    library(p, character.only = TRUE, quietly = TRUE)  # Load the package
+  }
+}
+
+```
+
+### Description Of The Dataset
+
+The Nero vom Buchonia dataset contains show ratings, performance titles, and health information about the offspring of a male workingline German Shepherd Dog named G Nero vom Buchonia IGP3 KKL.
+It represents a typical dataset observed in the context of German Shepherd Dog (GSD) breeding.
+
+Note that it:
+
+* Uses specialized terminology that might be unfamiliar to you.
+* There are missing values in the dataset. 
+* The information is derived from a mixture of public and private data    sources.
+
+### It's Important To Note
+
+The table below is only a small subset of a much larger dataset. 
+No data dictionary is available, a common feature of canine datasets.
+For educational purposes, web scraping is permitted in order to access the data for analysis.
+
+### Acknowledgement
+
+Thank you to Jennifer Lee, Nero's owner, for helping to create this dataset for the workshop.
+
+### The Dataset
+
+```{r Offspring Data, include=FALSE}
+
+#create the dataframe for the Nero vom Buchonia offspring data
+
+nero_data <- data.frame("Name" = c("G Nero vom Buchonia IGP3", "Faine Auf der Marquis IGP1", "Falco Auf der Marquis IGP1", "Forest Ranger Auf der Marquis IGP1", "Fallon Auf der Marquis IGP1", "Yogi vom Owenberg", "SG Brynn vom Adlerland IGP2", "Banshee vom Aderland ACT2", "Baha vom Aderland CGC", "Baalos vom Aderland", "Tesla vom Wildhaus IGP1", "Trauma vom Wildhaus IGP1", "Torque vom Wildhaus", "Chimera von Bairdhaus", "SG Halo z Tammik BH", "Blackthorn's Game Changer", "G Kikki von Bairdhaus IGP3"),
+  "KKL" = c("Yes","", "", "", "", "", "", "", "", "","", "", "", "", "", "", "Yes"),
+  "BirthDate" = c("March 9, 2013", "May 10, 2019", "May 10, 2019", "May 10, 2019", "May 10, 2019", "May 10, 2019", "August 28, 2018", "August 28, 2018", "August 28, 2018", "August 28, 2018", "January 13, 2018", "January 13, 2018", "January 13, 2018", "January 13, 2018", "September 15, 2020", "November 20, 2020", "December 20, 2020"),
+  "Sex" = c("Male", "Male", "Male", "Male", "Female", "Male", "Female", "Female", "Female", "Male", "Female", "Female", "Male", "Female", "Male", "Male", "Female"),
+  "Colour" = c("grey", "black-tan", "grey", "grey", "bicolor", "black-tan", "sable", "bicolor", "black-tan", "black-tan", "black-tan", "sable", "bicolor", "grey", "black-tan", "sable", "grau"),
+"HipsAndElbowsRating" = c("a-normal; Normal", "a-normal; Normal", "a-normal; Normal", "a-normal; Normal", "a-normal; Normal", "a-normal; Fast Normal", "Excellent; Normal", "Good; Normal", "Good; Normal", "Good; Normal", "a-normal; Normal", "Excellent; Normal", "NA; Normal", "Mittlere; Normal", "a-normal; Normal", "Good; Normal", "a-fast normal; Fast Normal"),
+"ZW" = c(88, 80, 80, 80, 80, 80, "", "", "", "",80, "", "", 120, 80, "", 99)
+)
+                        
+```
+
+```{r Output Table, echo=FALSE}
+
+#create a display table using the gt library
+
+nero_data %>%
+  gt() %>%
+  #apply the fancy NT TImes theme
+  gtExtras::gt_theme_nytimes() %>%
+  #center the data in the columns except the first column
+    cols_align(
+      align = "center",
+      columns =  c(2:7)
+    ) %>%
+    #prevent the cells from breaking at hyphens
+    text_transform(
+    locations = cells_body(),  #apply to body cells
+    fn = function(x) gsub("-", "\u2011", x)  #replace hyphens with non-breaking hyphens
+    ) %>%
+    #add a title
+    tab_header(
+      title = md("**Nero vom Buchonia Offspring Data**")
+      ) %>%
+    #bold and format the column names
+    cols_label(
+      Name = md("**Name**"),
+      KKL = md("**KKL**"),
+      BirthDate = md("**Birth Date**"),
+      Sex = md("**Sex**"),
+      Colour = md("**Colour**"),
+      HipsAndElbowsRating = md("**Hips And Elbows Rating**"),
+      ZW = md("**ZW**")
+    ) %>%
+    #add HTML code to center the content in the cells
+    tab_style(
+      style = list(
+      cell_text(align = "center") #center align text in cells
+    ),
+    #apply styling to table body cells in columns 2 to 7 cells
+      locations = cells_body(columns = c(2:7))
+  ) %>%
+   #add HTML code to center the content in the cells of the header
+    tab_style(
+    style = list(
+      cell_text(align = "center")
+    ),
+    locations = cells_stub() #apply the HTML code to center the content in the cells of the header
+  ) 
+
+```
