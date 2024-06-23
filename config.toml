@@ -1,8 +1,8 @@
-baseURL = "/"
+baseURL = "https://lebriggs.com"
 theme = "hugo-apero"
 languageCode = "en"
-title = "Hugo Apéro"
-author = "Alison Hill"
+title = "Personal Website of Laura Briggs"
+author = "Laura Briggs"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
 #disqusShortname = "" # see params.comments to use utterances or giscus instead of Disqus
@@ -26,13 +26,15 @@ enableEmoji = true
   [markup.highlight]
     # one of: https://xyproto.github.io/splash/docs/ 
     style = "github"
+  [markup.goldmark.extensions]
+    table = true
     
 [params]
-  orgName = "RStudio"
-  orgLocal = "Anywhere"
-  description = "A modern, beautiful, and easily configurable blog theme for Hugo."
+  orgName = "L. E. Briggs"
+  orgLocal = "Wheatley, ON"
+  description = "Within my website, you’ll discover my writings about some fun personal projects I’ve worked on. You’ll also find links to presentations I’ve given."
   favicon = "/img/favicon.ico"
-  logo = "/img/blogophonic-mark-dark.png"
+  logo = "/img/paw2.jpg"
   mainSections = ["blog", "project", "talk"]
   navallcaps = true
   # show/hide social icons in site header & footer
@@ -41,14 +43,14 @@ enableEmoji = true
   socialInFooter = true
   # Default image for social sharing and search engines. 
   # Place image file in `static` folder and specify image name here.
-  sharing_image = "/img/papillons.jpg"
+  sharing_image = "img/bosco.jpg"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
-  twitter = "apreshill"
+  twitter = "laura271GSD1"
   
   # use a built-in color theme
   # one of: earth / forest / grayscale / magma / paper / peach / plum /
   #         poppy / primer / sky / violet / water 
-  theme = "sky"
+  theme = "poppy"
   
   # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
@@ -105,31 +107,31 @@ enableEmoji = true
   [[params.social]]
       icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://github.com/apreshill/apero"
-  [[params.social]]
-      icon      = "bluesky" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://bsky.app/"
-  [[params.social]]
-      icon      = "instagram" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://www.instagram.com/explore/tags/apero/"
+      url       = "https://github.com/lebriggs"
+  #[[params.social]]
+     # icon      = "bluesky" # icon name without the 'fa-'
+      #icon_pack = "fab"
+      #url       = "https://bsky.app/"
+  #[[params.social]]
+      #icon      = "instagram" # icon name without the 'fa-'
+      #icon_pack = "fab"
+      #url       = "https://www.instagram.com/explore/tags/apero/"
   [[params.social]]
       icon      = "x-twitter" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://twitter.com/hashtag/apéro"
-  [[params.social]]
-      icon      = "impactstory" # icon name without the 'fa-'
-      icon_pack = "ai"
-      url       = "https://impactstory.org/u/0000-0002-8082-1890"
-  [[params.social]]
-      icon      = "orcid" # icon name without the 'fa-'
-      icon_pack = "ai"
-      url       = "http://orcid.org/0000-0002-8082-1890"
-  [[params.social]]
-      icon      = "rss" # icon name without the 'fa-'
-      icon_pack = "fas"
-      url       = "/blog/index.xml"
+      url       = "https://twitter.com/hashtag/laura271GSD1"
+  #[[params.social]]
+      #icon      = "impactstory" # icon name without the 'fa-'
+      #icon_pack = "ai"
+      #url       = "https://impactstory.org/u/0000-0002-8082-1890"
+  #[[params.social]]
+      #icon      = "orcid" # icon name without the 'fa-'
+      #icon_pack = "ai"
+      #url       = ""
+  #[[params.social]]
+      #icon      = "rss" # icon name without the 'fa-'
+      #icon_pack = "fas"
+      #url       = "/blog/index.xml"
 
 [taxonomies]
   category = "categories"
@@ -140,7 +142,7 @@ enableEmoji = true
   # Configure header 
   [[menu.header]]
     name = "About"
-    title = "About Blogophonic"
+    title = "About Laura"
     url = "/about/"
     weight = 1
   [[menu.header]]
