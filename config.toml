@@ -1,7 +1,7 @@
 baseURL = "https://lebriggs.com"
 theme = "hugo-apero"
 languageCode = "en"
-title = "Personal website of Laura Briggs"
+title = "Website of Laura Briggs"
 author = "Laura Briggs"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
