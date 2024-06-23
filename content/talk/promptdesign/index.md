@@ -2,7 +2,7 @@
 title: "Prompt Design For Beginners"
 subtitle: "Under The Hood"
 excerpt: "The Canva whiteboard outlines how a mind map was used to plan an asynchronous, modular prompt design workshop for ChatGPT-3.5. It includes a detailed example demonstrating the use of delimiters in your prompts."
-date: 2024-01-12
+date: 2024-02-13
 date_end: ""
 featured: false
 show_post_time: false
