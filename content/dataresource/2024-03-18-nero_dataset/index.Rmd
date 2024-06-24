@@ -39,6 +39,10 @@ for (p in pkg2) {  #iterate over each package name in the pkg2 vector
   library(p, character.only = TRUE, quietly = FALSE)  #load the package after installation
 }
 
+#reset 'p' to avoid confusion after the loop
+rm(p)  #remove 'p' from the environment to avoid retaining its last value
+
+
 ```
 
 ### Description Of The Dataset
