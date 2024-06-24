@@ -12,6 +12,7 @@ categories:
   - workshop
   - data cleaning
   - diagram
+  - R script
   - R Studio
   - Canva
   - data analysis
@@ -25,12 +26,17 @@ layout: single
 #list of required packages
 pkg2 <- c("gt", "tidyverse", "gtExtras", "here")
 
-#install packages that are not already installed
-for (p in pkg2) {  # Iterate over each package name in the pkg2 vector
-  if (!require(p, character.only = TRUE, quietly = TRUE)) {  # Check if the package is installed
-    install.packages(p)  # Install the package if it is not installed
-    library(p, character.only = TRUE, quietly = TRUE)  # Load the package
+#install and load packages that are not already installed
+
+#we use a for loop to automate the process of checking, installing,
+#and loading each package in our list, saving time and avoiding manual repetition
+#where 'p' represents the current package name being processed in each iteration of the loop
+
+for (p in pkg2) {  #iterate over each package name in the pkg2 vector
+  if (!require(p, character.only = TRUE, quietly = FALSE)) {  #check if the package is installed
+    install.packages(p)  #install the package if it is not installed
   }
+  library(p, character.only = TRUE, quietly = FALSE)  #load the package after installation
 }
 
 ```
