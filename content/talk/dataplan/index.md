@@ -29,7 +29,7 @@ links:
 - icon: info-circle
   icon_pack: fa
   name: INSTRUCTIONS
-  url: "/dataresource/2024-03-18-nero_instructions/index"
+  url: "/dataresource/2024-03-18-nero_instructions/"
 - icon: chalkboard
   icon_pack: fas
   name: WHITEBOARD
@@ -37,7 +37,7 @@ links:
 - icon: table
   icon_pack: fa
   name: DATA
-  url: "/dataresource/2024-03-18-nero_dataset/index"
+  url: "/dataresource/2024-03-18-nero_dataset/"
 - icon: r-project
   icon_pack: fab
   name: R SCRIPT
