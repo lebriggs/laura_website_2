@@ -1,7 +1,7 @@
 ---
 title: "Contract Cheating"
 subtitle: "Insights From A Dice Proabability Question"
-excerpt: "Remember the time before AI, when contract cheating was a major concern in universities? Here's my hot take on the issue."
+excerpt: "Remember the time before AI, when contract cheating was a major concern for universities? Here's my hot take on the issue."
 date: 2023-01-16
 date_end: ""
 featured: false
