@@ -28,6 +28,11 @@ links:
   icon_pack: fas
   name: WHITEBOARD
   url: https://t.ly/2Jjub
+- - icon: graduation-cap
+  icon_pack: fa
+  name: COURSE
+  url: https://libguides.uvic.ca/promptdesign/welcome
 ---
 
 * I'm confident that my 2024 peaked right after I narrated the development of the mind map. You know how much I love diagrams but this one has a lot going on - even for me.
+* The course I created is live at UVic Libraries (but it could have been changed from my original creation).
