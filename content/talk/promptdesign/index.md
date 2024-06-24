@@ -15,6 +15,7 @@ draft: false
 layout: single
 categories:
 - presentation
+- course
 - ChatGPT
 - prompt design
 - mind map
