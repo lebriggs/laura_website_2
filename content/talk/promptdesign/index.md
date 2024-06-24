@@ -28,7 +28,7 @@ links:
   icon_pack: fas
   name: WHITEBOARD
   url: https://t.ly/2Jjub
-- - icon: graduation-cap
+- icon: graduation-cap
   icon_pack: fa
   name: COURSE
   url: https://libguides.uvic.ca/promptdesign/welcome
