@@ -23,25 +23,53 @@ layout: single
 
 ```{r include=FALSE}
 
+#I. Initial Set-up: Install and Load Required Packages with Basic Feedback
+
 #list of required packages
-pkg2 <- c("gt", "tidyverse", "gtExtras", "here")
+pkg2 <- c("tidyverse", "here", "gt", "gtExtras")
 
-#install and load packages that are not already installed
+#function to install missing packages with all dependencies
+#dependencies = TRUE ensures that all required dependencies are installed
+#installing all dependencies minimizes potential issues with missing packages
+#adding messages provides feedback on the installation and loading status of each package
 
-#we use a for loop to automate the process of checking, installing,
-#and loading each package in our list, saving time and avoiding manual repetition
-#where 'p' represents the current package name being processed in each iteration of the loop
-
-for (p in pkg2) {  #iterate over each package name in the pkg2 vector
-  if (!require(p, character.only = TRUE, quietly = FALSE)) {  #check if the package is installed
-    install.packages(p)  #install the package if it is not installed
-  }
-  library(p, character.only = TRUE, quietly = FALSE)  #load the package after installation
+install_if_missing <- function(package) {
+  tryCatch({
+    if (!package %in% rownames(installed.packages())) { #check if package is installed
+      install.packages(package, dependencies = TRUE) #install the package with all dependencies
+      Sys.sleep(2) #add a brief delay to ensure the installation process completes properly before attempting to load the package
+      .libPaths(.libPaths()) #reload the library paths to ensure that the newly installed package is recognized by the current R session
+      if (!require(package, character.only = TRUE)) {
+        return(paste("Failed to install or load package:", package))
+      } else {
+        return(paste(package, "was installed and loaded successfully."))
+      }
+    } else {
+      library(package, character.only = TRUE) #load the package
+      return(paste(package, "was already installed."))
+    }
+  }, error = function(e) {
+    return(paste("Error installing or loading package:", package, "-", e$message))
+  })
 }
 
-#reset 'p' to avoid confusion after the loop
-rm(p)  #remove 'p' from the environment to avoid retaining its last value
+#install and load packages
+install_results <- lapply(pkg2, install_if_missing) #apply the install_if_missing function to each package in pkg2
 
+#print installation and loading results with a title
+cat("Summary:\n", unlist(install_results), sep = "\n")
+
+```
+
+```{r include=FALSE}
+
+#II. Subsequent Session: Load Required Packages
+
+#list of required packages that were previously installed
+#pkg2 <- c("tidyverse", "here", "gt", "gtExtras", "janitor")
+
+#load packages that were previously installed
+#lapply(pkg2, require, character.only = TRUE)
 
 ```
 
