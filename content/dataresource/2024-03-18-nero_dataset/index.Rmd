@@ -66,7 +66,7 @@ cat("Summary:\n", unlist(install_results), sep = "\n")
 #II. Subsequent Session: Load Required Packages
 
 #list of required packages that were previously installed
-#pkg2 <- c("tidyverse", "here", "gt", "gtExtras", "janitor")
+#pkg2 <- c("tidyverse", "here", "gt", "gtExtras")
 
 #load packages that were previously installed
 #lapply(pkg2, require, character.only = TRUE)
