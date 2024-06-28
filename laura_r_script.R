@@ -2,17 +2,49 @@
 #22 June 2024
 #https://youtu.be/RksaNh5Ywbo?si=RRQkMJTl7voLp3GJ (Alison Hill)
 
-# List of required packages
-pkg <- c("usethis", "remotes", "distill", 
-         "postcards", "blogdown", "config")
+#I. Initial Set-up: Install and Load Required Packages with Basic Feedback
 
-# Install packages that are not already installed
-for (p in pkg) {  #iterate over each package name in the pkg vector
-  if (!require(p, character.only = TRUE, quietly = TRUE)) {  #check if the package is installed
-    install.packages(p)  #install the package if it is not installed
-    library(p, character.only = TRUE, quietly = TRUE)  #load the package
-  }
+#list of required packages
+pkg2 <- c("usethis", "remotes", "distill", "postcards", "blogdown", "config")
+
+#function to install missing packages with all dependencies
+#dependencies = TRUE ensures that all required dependencies are installed
+#installing all dependencies minimizes potential issues with missing packages
+#adding messages provides feedback on the installation and loading status of each package
+
+install_if_missing <- function(package) {
+  tryCatch({
+    if (!package %in% rownames(installed.packages())) { #check if package is installed
+      install.packages(package, dependencies = TRUE) #install the package with all dependencies
+      Sys.sleep(2) #add a brief delay to ensure the installation process completes properly before attempting to load the package
+      .libPaths(.libPaths()) #reload the library paths to ensure that the newly installed package is recognized by the current R session
+      if (!require(package, character.only = TRUE)) {
+        return(paste("Failed to install or load package:", package))
+      } else {
+        return(paste(package, "was installed and loaded successfully."))
+      }
+    } else {
+      library(package, character.only = TRUE) #load the package
+      return(paste(package, "was already installed."))
+    }
+  }, error = function(e) {
+    return(paste("Error installing or loading package:", package, "-", e$message))
+  })
 }
+
+#install and load packages
+install_results <- lapply(pkg2, install_if_missing) #apply the install_if_missing function to each package in pkg2
+
+#print installation and loading results with a title
+cat("Summary:\n", unlist(install_results), sep = "\n")
+
+#II. Subsequent Sessions: Load Required Packages
+
+#list of required packages that were previously installed
+#pkg2 <- c("usethis", "remotes", "distill",  "postcards", "blogdown", "config")
+
+#load packages that were previously installed
+#lapply(pkg2, require, character.only = TRUE)
 
 #install the development version of the rmarkdown package
 remotes::install_github("rstudio/rmarkdown")
