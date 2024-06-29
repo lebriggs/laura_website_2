@@ -31,8 +31,8 @@ links:
   icon_pack: fas
   name: WHITEBOARD
   url: https://shorturl.at/tJyeE
-- icon: r-project
-  icon_pack: fab
+- icon: github
+  icon_pack: fa
   name: R SCRIPT
   url: 
 ---
