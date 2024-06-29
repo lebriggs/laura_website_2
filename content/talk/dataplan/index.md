@@ -38,10 +38,10 @@ links:
   icon_pack: fa
   name: DATA
   url: "/dataresource/2024-03-18-nero_dataset/"
-- icon: r-project
+- icon: github
   icon_pack: fab
   name: R SCRIPT
-  url:
+  url: 
 ---
 
 * Using a diagram to provide students with a unique aerial view of the data analysis process.
