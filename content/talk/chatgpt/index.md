@@ -32,7 +32,7 @@ links:
   name: WHITEBOARD
   url: https://shorturl.at/tJyeE
 - icon: github
-  icon_pack: fa
+  icon_pack: fab
   name: R SCRIPT
   url: 
 ---
