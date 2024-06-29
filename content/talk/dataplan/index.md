@@ -41,7 +41,7 @@ links:
 - icon: github
   icon_pack: fab
   name: R SCRIPT
-  url: 
+  url: "https://github.com/lebriggs/analysis-plan-canva"
 ---
 
 * Using a diagram to provide students with a unique aerial view of the data analysis process.
