@@ -34,7 +34,7 @@ links:
 - icon: github
   icon_pack: fab
   name: R SCRIPT
-  url: 
+  url: "https://github.com/lebriggs/analysis-plan-canva"
 ---
 
 * Be sure to check out the whiteboard which features a diagram outlining the process of a ChatGPT-3.5 assisted data analysis task!
