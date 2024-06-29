@@ -10,7 +10,7 @@ event: "rstudio::global(2021)"
 event_url: https://global.rstudio.com
 author: "Alison Hill"
 location: "Sydney, Australia"
-draft: false
+draft: true
 # layout options: single, single-sidebar
 layout: single
 categories:
