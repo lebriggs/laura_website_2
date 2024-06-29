@@ -18,17 +18,19 @@ install_if_missing <- function(package) {
       install.packages(package, dependencies = TRUE) #install the package with all dependencies
       Sys.sleep(2) #add a brief delay to ensure the installation process completes properly before attempting to load the package
       .libPaths(.libPaths()) #reload the library paths to ensure that the newly installed package is recognized by the current R session
-      if (!require(package, character.only = TRUE)) {
-        return(paste("Failed to install or load package:", package))
+      if (!require(package, character.only = TRUE)) { #try to load the package
+        return(paste("Failed to install or load package:", package)) #return message if loading fails
       } else {
-        return(paste(package, "was installed and loaded successfully."))
+        return(paste(package, "was installed and loaded successfully.")) #return message if installation and loading succeed
       }
     } else {
-      library(package, character.only = TRUE) #load the package
-      return(paste(package, "was already installed."))
+      library(package, character.only = TRUE) #load the package if it is already installed
+      return(paste(package, "was already installed.")) #return message if the package was already installed
     }
   }, error = function(e) {
-    return(paste("Error installing or loading package:", package, "-", e$message))
+    #this function is called if an error occurs during the try block
+    #e is the error object that contains details about the error
+    return(paste("Error installing or loading package:", package, "-", e$message)) #extracts and returns the error message
   })
 }
 
@@ -46,6 +48,8 @@ cat("Summary:\n", unlist(install_results), sep = "\n")
 #load packages that were previously installed
 #lapply(pkg2, require, character.only = TRUE)
 
+#III. Set-up The R Environment
+
 #install the development version of the rmarkdown package
 remotes::install_github("rstudio/rmarkdown")
 
@@ -60,6 +64,8 @@ options(blogdown.hugo.dir = "/cloud/home/r2505877/.local/share/Hugo/0.80.0")
 #check the version of Hugo being used
 #0.80.0
 blogdown::hugo_version()
+
+#IV. Set-up The Git Environment
 
 #personal access token (PAT} to connect R with gitbub
 #use this as a guide https://happygitwithr.com/https-pat
@@ -82,9 +88,13 @@ usethis::git_sitrep()
 
 usethis::use_git_config(user.name = "Laura Briggs", user.email = "laura_e_briggs@live.ca")
 
+#V. Enable The Viewer
+
 #Addins Serve Site
 #Viewer - let's you see a local view of the site
 #it's an out of date viewer
+
+#VI. Check Site
 
 #check all of the functions in the website
 #run this line frequently after making changes to your site
