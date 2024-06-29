@@ -31,21 +31,21 @@ This 30-minute hands-on workshop will introduce you to the world of effective da
 
 This workshop is designed for anyone who has a keen interest in data analysis. No previous knowledge of the tool, Canva, is required. However, it will be helpful if you have an understanding of a few fundamental terms used in R Studio such as categorical variable and dataframe. Questions are encouraged during the workshop!
 
-* Faculty Members
-* Graduate Students
-* Undergraduate Students
-* UVic Staff
-* General Public
+- Faculty Members
+- Graduate Students
+- Undergraduate Students
+- UVic Staff
+- General Public
 
 ### Learning Outcomes
 
 By the end of this workshop, participants will be able to:
 
-Understand the advantages of creating a data pre-analysis plan in Canva. 
-Identify the six sections of a robust data pre-analysis plan. 
-Know how to add and read comments on an existing data pre-analysis plan in Canva.
-Recognize when and how to integrate a data pre-analysis plan into their own projects.
-Leave with an editable version of the example discussed in the workshop that can be modified to suit their own work. 
+- Understand the advantages of creating a data pre-analysis plan in Canva. 
+- Identify the six sections of a robust data pre-analysis plan. 
+- Know how to add and read comments on an existing data pre-analysis plan in Canva.
+- Recognize when and how to integrate a data pre-analysis plan into their own projects.
+- Leave with an editable version of the example discussed in the workshop that can be modified to suit their own work. 
 
 ### Agenda
 
