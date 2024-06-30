@@ -1,49 +1,52 @@
 #Creating A Blogdown Site For Laura
-#22 June 2024
+#30 June 2024
 #https://youtu.be/RksaNh5Ywbo?si=RRQkMJTl7voLp3GJ (Alison Hill)
 
-#I. Initial Set-up: Install and Load Required Packages with Basic Feedback
+# I. Initial Set-up: Install and Load Required Packages with Basic Feedback
+
+#this script installs and loads required packages with basic feedback
+#separating the installation check from the loading step ensures a more robust process
 
 #list of required packages
 pkg2 <- c("usethis", "remotes", "distill", "postcards", "blogdown", "config")
 
-#function to install missing packages with all dependencies
-#dependencies = TRUE ensures that all required dependencies are installed
+#create a function to install and load packages with feedback
 #installing all dependencies minimizes potential issues with missing packages
 #adding messages provides feedback on the installation and loading status of each package
 
-install_if_missing <- function(package) {
+install_and_load <- function(package) {
   tryCatch({
     if (!package %in% rownames(installed.packages())) { #check if package is installed
       install.packages(package, dependencies = TRUE) #install the package with all dependencies
-      Sys.sleep(2) #add a brief delay to ensure the installation process completes properly before attempting to load the package
-      .libPaths(.libPaths()) #reload the library paths to ensure that the newly installed package is recognized by the current R session
-      if (!require(package, character.only = TRUE)) { #try to load the package
-        return(paste("Failed to install or load package:", package)) #return message if loading fails
+      Sys.sleep(2) #ensure the installation process completes properly
+      .libPaths(.libPaths()) #reload the library paths
+      if (!require(package, character.only = TRUE)) { #try to load the package again
+        return(paste("failed to install or load package:", package)) #return message if loading fails
       } else {
-        return(paste(package, "was installed and loaded successfully.")) #return message if installation and loading succeed
+        return(paste(package, "was installed and loaded successfully.")) #return message if successful
       }
     } else {
-      library(package, character.only = TRUE) #load the package if it is already installed
-      return(paste(package, "was already installed.")) #return message if the package was already installed
+      if (!require(package, character.only = TRUE)) { #try to load the package
+        return(paste("failed to load package:", package)) #return message if loading fails
+      } else {
+        return(paste(package, "was already installed and loaded.")) #return message if already installed and loaded
+      }
     }
   }, error = function(e) {
-    #this function is called if an error occurs during the try block
-    #e is the error object that contains details about the error
-    return(paste("Error installing or loading package:", package, "-", e$message)) #extracts and returns the error message
+    return(paste("error installing or loading package:", package, "-", e$message)) #extract and return the error message
   })
 }
 
 #install and load packages
-install_results <- lapply(pkg2, install_if_missing) #apply the install_if_missing function to each package in pkg2
+install_results <- lapply(pkg2, install_and_load)
 
 #print installation and loading results with a title
-cat("Summary:\n", unlist(install_results), sep = "\n")
+cat("summary:\n", unlist(install_results), sep = "\n")
 
-#II. Subsequent Sessions: Load Required Packages
+# II. Subsequent Session(s): Load Required Packages
 
 #list of required packages that were previously installed
-#pkg2 <- c("usethis", "remotes", "distill",  "postcards", "blogdown", "config")
+#pkg2 <- c("usethis", "remotes", "distill", "postcards", "blogdown", "config")
 
 #load packages that were previously installed
 #lapply(pkg2, require, character.only = TRUE)
