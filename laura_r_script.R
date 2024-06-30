@@ -86,7 +86,7 @@ Sys.setenv(GITHUB_PAT = config$GITHUB_PAT)
 #check the status of the connection of R with the github repository
 usethis::git_sitrep()
 
-usethis::use_git_config(user.name = "Laura Briggs", user.email = "laura_e_briggs@live.ca")
+usethis::use_git_config(user.name = "my name", user.email = "my email")
 
 #V. Enable The Viewer
 
