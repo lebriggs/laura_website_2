@@ -3,7 +3,7 @@ title: Presentations
 description: |
   Materials from my workshops and presentations, including slides, whiteboards, R scripts, datasets, and other shareable resources.
 author: "Laura Briggs"
-show_post_thumbnail: false
+show_post_thumbnail: true
 show_author_byline: false
 show_post_date: true
 show_post_time: false
