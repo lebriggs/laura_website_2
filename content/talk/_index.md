@@ -9,7 +9,7 @@ show_post_date: true
 show_post_time: false
 show_button_links: true
 # for listing page layout
-layout: list # list, list-sidebar
+layout: list # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
