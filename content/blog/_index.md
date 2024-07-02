@@ -1,7 +1,9 @@
 ---
-title: Blog That Goes Fast
+title: The Blog
 description: |
-  Description goes here.
+ Random thoughts about data science with a focus on R.
+ 
+ Sometimes, I talk about GSDs.
 author: "Laura Briggs"
 show_post_thumbnail: true
 show_author_byline: false
