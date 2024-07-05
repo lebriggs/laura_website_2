@@ -1,14 +1,11 @@
 ---
 title: "The Blog"
 description: |
-  Random thoughts about data science with a focus on R.
-  
-  Sometimes, I talk about German Shepherd Dogs. 
 author: "Laura Briggs"
 show_post_thumbnail: true
-show_author_byline: false
+show_author_byline: true
 show_post_date: true
-show_button_links: false
+show_button_links: true
 # for listing page layout
 layout: list # list, list-sidebar, list-grid
 
