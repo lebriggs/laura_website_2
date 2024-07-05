@@ -1,27 +1,23 @@
 ---
-title: The Blog
+title: "The Blog"
 description: |
- Random thoughts about data science with a focus on R.
- 
- Sometimes, I talk about GSDs.
+  Random thoughts about data science with a focus on R.
+  
+  Sometimes, I talk about German Shepherd Dogs. 
 author: "Laura Briggs"
 show_post_thumbnail: true
 show_author_byline: false
 show_post_date: true
+show_button_links: false
 # for listing page layout
-layout: list-grid # list, list-sidebar, list-grid
+layout: list # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
-  title: A Sidebar for Your Thoughts
-  description: |
-    This is a fully featured blog that supports categories,
-    tags, series, and pagination. Even this sidebar offers 
-    a ton of customizations.
-    
-    Check out the _index.md file in the /blog folder 
-    to edit this content. 
-  author: "The R Markdown Team @RStudio"
+  title: ""
+  description: "Check out the _index.md file in the /blog folder 
+    to edit this content."
+  author: ""
   text_link_label: Subscribe via RSS
   text_link_url: /index.xml
   show_sidebar_adunit: false # show ad container
