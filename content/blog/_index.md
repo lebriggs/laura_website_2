@@ -3,7 +3,7 @@ title: "The Blog"
 description: |
 author: "Laura Briggs"
 show_post_thumbnail: true
-show_author_byline: true
+show_author_byline: false
 show_post_date: true
 show_button_links: true
 # for listing page layout
