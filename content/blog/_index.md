@@ -1,15 +1,16 @@
 ---
-title: The Blog
+title: A Blog That Works
 description: |
-  Random Thoughts about data science with a focus on R.
-author: "Laura Briggs"
+  This is a fully featured blog that supports categories, 
+  tags, series, and pagination.
+author: "The R Markdown Team @RStudio"
 show_post_thumbnail: true
 thumbnail_left: true # for list-sidebar only
-show_author_byline: false
+show_author_byline: true
 show_post_date: true
 show_button_links: false
 # for listing page layout
-layout: list # list, list-sidebar, list-grid
+layout: list-sidebar # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
@@ -31,10 +32,10 @@ sidebar:
 
 # set up common front matter for all pages inside blog/
 cascade:
-  author: "Laura Briggs"
+  author: "The R Markdown Team @RStudio"
   show_author_byline: true
   show_post_date: true
-  show_comments: false # see site config to choose Disqus or Utterances
+  show_comments: true # see site config to choose Disqus or Utterances
   # for single-sidebar layout
   sidebar:
     text_link_label: View recent posts
