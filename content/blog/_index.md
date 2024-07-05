@@ -1,5 +1,5 @@
 ---
-title: "The Blog""
+title: "The Blog"
 description: |
   This is a fully featured blog that supports categories, 
   tags, series, and pagination.
