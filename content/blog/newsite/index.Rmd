@@ -43,8 +43,7 @@ Here’s how you usually add Alt text to an image in Markdown:
 ```{r Alt Text Chunk, echo=TRUE, eval=FALSE}
 
 #code showing the alt text for an image in Markdown
-
-![side profile of Bosco, a sable workingline German Shepherd Dog, standing in a field of grass with a sky that has wispy clouds](img/bosco.jpg)
+![Bosco is a sable German Shepherd Dog](img/bosco.jpg)
 
 ```
 
