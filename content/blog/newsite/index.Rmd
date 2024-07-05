@@ -1,6 +1,6 @@
 ---
 author: Laura Briggs
-title: "Welcome to My New Website!"
+title: "Welcome To My New Website!"
 subtitle: ""
 date: "2024-07-04"
 draft: false
@@ -16,4 +16,4 @@ categories:
 - Quarto
 ---
 
-#Title Here
+## Title Here
