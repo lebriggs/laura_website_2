@@ -52,3 +52,4 @@ The dog in the photo is Bosco, my late husband's workingline German Shepherd Dog
 <img src="img/bosco.jpg" alt="alt side profile of Bosco, a sable workingline German Shepherd Dog, standing in a field of grass with a sky that has wispy clouds">
 
 
+
