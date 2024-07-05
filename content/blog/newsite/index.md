@@ -43,12 +43,12 @@ Here’s how you usually add Alt text to an image in Markdown:
 
 ``` r
 #code showing the alt text for an image in Markdown
-![Bosco is a sable German Shepherd Dog](img/bosco.jpg)
+fix this
 ```
 
 The dog in the photo is Bosco, my late husband's workingline German Shepherd Dog. I use this photo of Bosco throughout the site as my avatar.
 
-![Bosco is a sable German Shepherd Dog](img/bosco.jpg)
+![Side profile a sable German Shepherd Dog standing in a field of grass](bosco.jpg)
 
 
 
