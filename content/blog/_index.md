@@ -1,6 +1,7 @@
 ---
 title: The Blog
 description: |
+  Random Thoughts about data science with a focus on R.
 author: "Laura Briggs"
 show_post_thumbnail: true
 thumbnail_left: true # for list-sidebar only
@@ -33,7 +34,7 @@ cascade:
   author: "Laura Briggs"
   show_author_byline: true
   show_post_date: true
-  show_comments: true # see site config to choose Disqus or Utterances
+  show_comments: false # see site config to choose Disqus or Utterances
   # for single-sidebar layout
   sidebar:
     text_link_label: View recent posts
