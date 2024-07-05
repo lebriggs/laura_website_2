@@ -1,7 +1,8 @@
 ---
-author: "Laura Briggs"
 title: "Welcome To My New Website!"
 subtitle: ""
+author: "Laura Briggs"
+show_author_byline: true
 date: "2024-07-05"
 draft: false
 excerpt: |
