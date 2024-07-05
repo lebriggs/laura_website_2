@@ -2,7 +2,7 @@
 title: The Blog
 description: |
 author: "Laura Briggs"
-show_post_thumbnail: true
+show_post_thumbnail: false
 thumbnail_left: true # for list-sidebar only
 show_author_byline: false
 show_post_date: true
