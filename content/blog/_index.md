@@ -1,16 +1,14 @@
 ---
 title: "The Blog"
 description: |
-  This is a fully featured blog that supports categories, 
-  tags, series, and pagination.
 author: "Laura Briggs"
 show_post_thumbnail: true
 thumbnail_left: true # for list-sidebar only
 show_author_byline: false
 show_post_date: true
-show_button_links: false
+show_button_links: true
 # for listing page layout
-layout: list # list, list-sidebar, list-grid
+layout: list-grid # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
