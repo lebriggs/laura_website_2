@@ -1,5 +1,6 @@
 ---
 title: "The Blog"
+type: blog
 description: |
 author: "Laura Briggs"
 show_post_thumbnail: true
@@ -21,6 +22,7 @@ sidebar:
 
 # set up common front matter for all pages inside dataresource/
 cascade:
+  type: blog
   author: "Laura Briggs"
   show_author_byline: true
   show_post_date: true
