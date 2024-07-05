@@ -16,17 +16,17 @@ categories:
 - Quarto
 ---
 
-## Greetings
+### Greetings
 
 Welcome to my new website. It's a work in progress as I'm still building it.
 
 It gives me a place to talk about R code and analyses on topics that interest me, usually incorporating health data on German Shepherd Dogs. It's also where I'll share materials from my teaching and presentations, making them available to a wider audience.
 
-## My Introduction To Hugo Apero
+### My Introduction To Hugo Apero
 
 I was first introduced to using the Hugo Apero theme for making a website through R when I helped students working on their portfolios while I was working as a librarian at the University of Victoria. I was intrigued. I found the documentation for Hugo Apero to be so helpful and thoughtful. Allison Hill has a great series of videos that walks you through setting up your site, which made the process even more enjoyable and accessible.
 
-## Why R, blogdown, and Hugo Apero?
+### Why R, blogdown, and Hugo Apero?
 
 I started building my own site to help students troubleshoot their issues with creating their portfolios. After I left UVic, I decided to come back to my website and finish it in my spare time. This blog has always been just a step on my learning pathway as a data science librarian. It was never meant as a final product but as part of my ongoing learning journey, where hands-on experience continually enhances my skills and knowledge.
 
@@ -34,7 +34,7 @@ I love how R feels like an immersive statistical environment, giving me the tool
 
 Hugo Apero is lightweight, fast, and works great on mobile. Its performance as a static site generator means super-fast load times with no server-side processing. The clean design fits perfectly with the content I want to share, allowing me to focus more on telling the stories that matter instead of trying to make my webpage look less bad. And I love the retro look of the website—it has a late 90s vibe to it.
 
-## The Con: Challenges With Alt Text In YAML
+### The Con: Challenges With Alt Text In YAML
 
 One challenge I’ve encountered is figuring out how to add Alt text to images specified in the YAML front matter of pages. This is important for accessibility, but it has been problematic because adding Alt text in the YAML causes the image not to be found. This likely stems from how the templates handle image data, making the lack of Alt text a more complex issue than initially expected and requiring further investigation.
 
@@ -43,14 +43,30 @@ Here’s how you usually add Alt text to an image in Markdown:
 
 ``` r
 #code showing the alt text for an image in Markdown
-fix this
+![Side profile of a sable German Shepherd Dog standing in a field of tall grass](bosco.jpg)
 ```
 
-The dog in the photo is Bosco, my late husband's workingline German Shepherd Dog. I use this photo of Bosco throughout the site as my avatar.
+The dog in the photo below is Bosco, my late husband's workingline German Shepherd Dog. I use this photo of Bosco throughout the site as my avatar.
 
-![Side profile a sable German Shepherd Dog standing in a field of grass](bosco.jpg)
+![Side profile a sable German Shepherd Dog standing in a field of tall grass](bosco.jpg)
 
+For now, I’ve left the lack of alt text in my avatar photo unresolved, but I plan to come back and fix it later.
 
+### Why I Might Switch to Quarto
 
+While I'm very happy with my current setup, I can't ignore that blogdown and Hugo Apero are considered old technology. This gives me a bit of existential dread every time I hit Push, wondering if my site is going to fail to deploy.
 
+Quarto is the most likely replacement. It could simplify my workflow by letting me use the same tool for various types of content, like documents, presentations, and websites. Its enhanced interactivity features allow for more dynamic and engaging content—perfect for complex data analyses and visualizations. Quarto also works well with the R environment I love, as it integrates seamlessly with tools like RMarkdown and even Jupyter Notebooks. This makes it easier to combine code, data, and text in a single document, streamlining how I create and share analyses.
+
+I plan to start transitioning this site to Quarto early next year. Don't worry! My site will retain the same URL, so you can continue to find all of the weird content here without any interruptions.
+
+### Enjoying the Process
+
+Even though it's currently sweltering here in Wheatley, I am thoroughly enjoying the process of building this site. Humorously, I realize that it's so on brand for me. It's 2024, and I am building a new website using old technology that most folks have migrated from in favor of Quarto. It's similar to how I'm still an active Tumblr user—you know, the social media platform that everyone is convinced has died.
+
+Feel free to explore the site. I love hearing from readers, so you are always welcome to [connect with me](/contact).
+
+### Subscribe To New Blog Posts
+
+If you would like to be notified when I publish a new blog post, please subscribe below:
 
