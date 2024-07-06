@@ -34,7 +34,7 @@ I love how R feels like an immersive statistical environment, giving me the tool
 
 Hugo Apéro is lightweight, fast, and works great on mobile. As a static site generator, it creates fully pre-built pages that load super quickly without needing any server-side processing. The clean design fits perfectly with the content I want to share, allowing me to focus more on telling the stories that interest me instead of fidgeting with a webpage in order to make it look less bad. Finally, I love the retro look of the website— it has a late 90s vibe to it.
 
-### The Con: Challenges With Alt Text In YAML
+### The Con: Challenges With Alt Text In The YAML
 
 One challenge I’ve encountered is figuring out how to add Alt text to images specified in the YAML front matter of pages, such as the homepage. Alternative text provides a full description for accessibility and for when the image cannot be displayed. Unfortunately, adding Alt text in the YAML prevents the image from being found. This likely stems from how the templates handle image data, making the lack of Alt text a more complex issue than initially expected.
 
@@ -61,7 +61,7 @@ The code window shows how you typically add Alt text to an image in Markdown. In
 
 ```
 
-The code used in the example is rendered below. The dog was my late husband's workingline German Shepherd Dog, Bosco. I use this photo of Bosco as my avatar throughout my website.
+The code used in the example is rendered below. The dog was my late husband's workingline German Shepherd Dog, Bosco. I use this photo of Bosco as my avatar throughout the website.
 
 | ![Side profile of a sable German Shepherd Dog standing in a field of tall grass](bosco.jpg "Bosco, a sable German Shepherd Dog") |
 |:--:|
@@ -69,21 +69,21 @@ The code used in the example is rendered below. The dog was my late husband's wo
 
 For now, I’ve left the lack of Alt text in my avatar photo unresolved, but plan to resolve it soon. Hopefully, an Internet stranger friend has a snappy solution to share with me. XD
 
-### Why I Might Switch to Quarto
+### Why I Plan To Switch To Quarto
 
-While I'm happy with my current setup, I can't ignore that blogdown and Hugo Apéro  are considered old technology. This gives me a bit of existential dread every time I hit Push, wondering if my site is going to fail to deploy.
+While I'm happy with my current setup, I can't ignore that blogdown and Hugo Apéro are considered old technology. This gives me a bit of existential dread every time I hit Push, wondering if my site is going to fail to build. I've learned to dread Netlify's cryptic error message: "Build script returned non-zero exit code: 2."
 
-Quarto is the most likely replacement. It could simplify my workflow by letting me use the same tool for various types of content, like documents, presentations, and websites. Its enhanced interactivity features allow for more dynamic and engaging content—perfect for complex data analyses and visualizations. Quarto also works well with the R environment I love, as it integrates seamlessly with tools like RMarkdown and even Jupyter Notebooks. This makes it easier to combine code, data, and text in a single document, streamlining how I create and share analyses.
+Quarto is the most likely replacement. It could simplify my workflow by letting me use the same tool for creating various types of content, such as documents, presentations, and websites. Its enhanced interactivity features allow for more dynamic and engaging content—perfect for complex data analyses and visualizations. Quarto also works well with the R environment I love, as it integrates seamlessly with tools like RMarkdown and even Jupyter Notebooks. This makes it easier to combine code, data, and text in a single document, streamlining how I create and share my analyses.
 
 I plan to start transitioning this site to Quarto early next year-ish. Don't worry! My site will retain the same URL, so you can continue to find all of the weird content here without any interruptions.
 
-### Enjoying the Process
+### Enjoying The Process
 
-Even though it's currently sweltering here in Wheatley, I am thoroughly enjoying the process of building this site. Humorously, I realize that it's so on brand for me. It's 2024, and I am building a new website using old technology that most folks have migrated from in favour of Quarto. It's similar to how I'm still an active Tumblr user- you know, the social media platform that everyone is convinced has died.
+Even though it's currently sweltering here in Wheatley, I am thoroughly enjoying the process of building this site. Humorously, I realize that it's so on brand for me. It's 2024, and I am building a new website using old technology that most folks have migrated from in favour of Quarto. It's similar to how I'm still an active Tumblr user- you know, the social media platform that everyone is convinced died years ago.
 
 Feel free to explore the site. I love hearing from readers, so you are always welcome to [connect with me](/contact).
 
 ### Subscribe To New Blog Posts
 
-If you would like to be notified when I publish a new blog post, please subscribe below:
+If you would like to be notified when I publish a new blog post then please subscribe below:
 
