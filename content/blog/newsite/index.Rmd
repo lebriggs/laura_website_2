@@ -20,7 +20,7 @@ categories:
 
 Welcome to my new website! It's a work in progress as I'm still building it.
 
-This site gives me a place to talk about R code and my analyses on various topics that interest me. Often, my examples will incorporate health data from German Shepherd Dogs, as I'm a longtime member of the community and have access to valuable data resources. You can also access materials from my teaching workshops and presentations, which are now available to a wider audience.
+This site provides a place where I can share my random thoughts on data science with a focus on R. Occasionally (often?), my examples will incorporate health data from German Shepherd Dogs, as I'm a longtime member of the community and have access to valuable data resources. You can also access materials from my teaching workshops and presentations, which are now available to a wider audience.
 
 ### My Introduction To Hugo Apéro
 
@@ -85,7 +85,7 @@ Feel free to explore the site. I love hearing from readers, so you are always we
 
 ### Subscribe To New Blog Posts
 
-If you would like to be notified when I publish a new blog post then please subscribe using [this form](https://dashboard.mailerlite.com/forms/1012938/126123917064537119/share).
+If you would like to be notified when I publish a new blog post then please subscribe using [this tiny form](https://dashboard.mailerlite.com/forms/1012938/126123917064537119/share). 
 
 
 
