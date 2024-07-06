@@ -84,5 +84,7 @@ Feel free to explore the site. I love hearing from readers, so you are always we
 
 ### Subscribe To New Blog Posts
 
-If you would like to be notified when I publish a new blog post then please subscribe below:
+If you would like to be notified when I publish a new blog post then please subscribe using [this form](https://dashboard.mailerlite.com/forms/1012938/126123917064537119/share).
+
+
 
