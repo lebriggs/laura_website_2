@@ -24,7 +24,7 @@ This site gives me a place to talk about R code and my analyses on various topic
 
 ### My Introduction To Hugo Apéro
 
-I was first introduced to using the Hugo Apéro theme for making a website through R when I helped students create their portfolios while I was employed as a contract librarian at the University of Victoria. I was intrigued. I found the documentation for Hugo Apéro to be so helpful and thoughtful. Allison Hill has a great series of videos on YouTube [[example]](https://youtu.be/RksaNh5Ywbo?si=8CVapkGBuTfkjrCn) that guide you through setting up a website, which made the entire process enjoyable.
+I was first introduced to using the Hugo Apéro theme for making a website through R when I helped students create their portfolios while I was employed as a contract librarian at the University of Victoria. I was intrigued. I found the documentation for Hugo Apéro to be so helpful and thoughtful. Dr. Alison Hill has a great series of videos on YouTube [[example]](https://youtu.be/RksaNh5Ywbo?si=8CVapkGBuTfkjrCn) that guide you through setting up a website, which made the entire process enjoyable.
 
 ### Why R, blogdown, and Hugo Apéro?
 
