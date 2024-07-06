@@ -36,38 +36,37 @@ Hugo Apéro is lightweight, fast, and works great on mobile. Its performance as 
 
 ### The Con: Challenges With Alt Text In YAML
 
-One challenge I’ve encountered is figuring out how to add Alt text to images specified in the YAML front matter of pages. Alternative text (need a definition here). This is important for accessibility, but it has been problematic for  my site because adding Alt text in the YAML causes the image not to be found. This likely stems from how the templates handle image data, making the lack of Alt text a more complex issue than initially expected and requiring further investigation.
+One challenge I’ve encountered is figuring out how to add Alt text to images specified in the YAML front matter of pages, such as the homepage. Alternative text provides a full description for accessibility and for when the image cannot be displayed. Unfortunately, adding Alt text in the YAML causes the image not to be found. This likely stems from how the templates handle image data, making the lack of Alt text a more complex issue than initially expected.
 
-The code window shows how you typically add Alt text to an image in Markdown. In the example, the image is located in the folder for this blog post so the file path is simple. As Alex W. L. Chan noted in [their post] (https://alexwlchan.net/2021/markdown-image-syntax/), the empty square brackets provide "a visual cue that something is missing" and gently prompts you to provide alternative text for an image. 
+The code window shows how you typically add Alt text to an image in Markdown. In the example, the image is located in the folder for this blog post, so the file path is simple. As Alex W. L. Chan noted in [their post] (https://alexwlchan.net/2021/markdown-image-syntax/), the empty square brackets provide "a visual cue that something is missing" and gently prompts you to provide alternative text for an image. The optional title attribute provides a brief description of the image as a tool tip when readers hover over it with their mouse.
 
 
 ``` r
 # Code showing the Alt text for an image in Markdown
+# the optional title acts as a tool tip
 
-#![Alt text](/file path/image.jpg "Optional title")
+![Alt text](/file-path/image.jpg title="optional title")
 
 # Apply the code to an example:
 
-![Side profile of a sable German Shepherd Dog standing 
-  in a field of tall grass](bosco.jpg "Bosco")
+![Side profile of a sable German Shepherd Dog standing in a field of tall grass](bosco.jpg "Bosco, a sable German Shepherd Dog")
 
 # Add an image caption using a Markdown table
-#this method is judged as "hacking Markdown"
-#but this is my blog, not a client's so eh
+# this method is judged as "hacking Markdown"
+# but this is my blog, not a client's, so eh
 
-| ![Side profile of a sable German Shepherd Dog standing in a field 
-    of tall grass](bosco.jpg "Bosco") |
+| ![Side profile of a sable German Shepherd Dog standing in a field of tall grass](bosco.jpg "Bosco, a sable German Shepherd Dog") |
 |:--:|
 | **Figure 1:** Bosco, the German Shepherd Dog. |
 ```
 
-The image used in the code example is shown below. The dog was my late husband's workingline German Shepherd Dog, Bosco. I use my photo of Bosco throughout the website as my avatar.
+The code used in the example is rendered below. The dog was my late husband's workingline German Shepherd Dog, Bosco. I use this photo of Bosco as my avatar throughout my website.
 
-| ![Side profile of a sable German Shepherd Dog standing in a field of tall grass](bosco.jpg "Bosco") |
+| ![Side profile of a sable German Shepherd Dog standing in a field of tall grass](bosco.jpg "Bosco, a sable German Shepherd Dog") |
 |:--:|
 | **Figure 1:** Bosco, the German Shepherd Dog. |
 
-For now, I’ve left the lack of Alt text in my avatar photo unresolved, but plan to resolve it soon. Surely, an Internet stranger friend has a solution to share with me.
+For now, I’ve left the lack of Alt text in my avatar photo unresolved, but plan to resolve it soon. Hopefully, an Internet stranger friend has a snappy solution to share with me. XD
 
 ### Why I Might Switch to Quarto
 
