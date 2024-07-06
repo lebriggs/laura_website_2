@@ -26,7 +26,7 @@ This site gives me a place to talk about R code and my analyses on various topic
 
 I was first introduced to using the Hugo Apéro theme for making a website through R when I helped students create their portfolios while I was employed as a contract librarian at the University of Victoria. I was intrigued. I found the documentation for Hugo Apéro to be so helpful and thoughtful. Dr. Alison Hill has a great series of videos on YouTube [[example]](https://youtu.be/RksaNh5Ywbo?si=8CVapkGBuTfkjrCn) that guide you through setting up a website, which made the entire process enjoyable.
 
-### Why R, blogdown, and Hugo Apéro?
+### Why R, blogdown, And Hugo Apéro?
 
 I started building my own site to show students how to troubleshoot their issues while creating their portfolios. After I left UVic, I decided to return to my website and finish it in my spare time. This website is meant as a step on my learning pathway as a data science librarian. It's not meant to be a final product but part of my ongoing journey, where hands-on experience continually enhances my skills and knowledge.
 
@@ -53,7 +53,7 @@ The code window shows how you typically add Alt text to an image in Markdown. In
 
 # Add an image caption using a Markdown table
 # this method is judged as "hacking Markdown"
-# but this is my blog, not a client's, so eh
+# but this is my blog, not a client's project, so eh
 
 | ![Side profile of a sable German Shepherd Dog standing in a field of tall grass](bosco.jpg "Bosco, a sable German Shepherd Dog") |
 |:--:|
