@@ -15,13 +15,17 @@ location: "Victoria, British Columbia"
 draft: false
 # layout options: single, single-sidebar
 layout: single
+tags:
+- "post_id: 006"
+- "Diagram"
+- "Mind map"
 categories:
-- presentation
-- tumblr
-- social media data
-- informed consent
-- mind map
-- R Studio
+- "Presentation"
+- "Tumblr"
+- "Social media data"
+- "Informed consent"
+- "R"
+- "Data analysis"
 links:
 - icon: slideshare
   icon_pack: fab
