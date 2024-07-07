@@ -13,14 +13,16 @@ location: "Regina, Saskatchewan"
 draft: false
 # layout options: single, single-sidebar
 layout: single
+tags:
+- "post_id: 005"
+- "Diagram"
 categories:
-- presentation
-- contract cheating
-- critical thinking
-- problem solving
-- information literacy
-- diagram
-- chemistry
+- "Presentation"
+- "Contract cheating"
+- "Critical thinking"
+- "Problem solving"
+- "Information literacy"
+- "Chemistry"
 links:
 - icon: slideshare
   icon_pack: fab
