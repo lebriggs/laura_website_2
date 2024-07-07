@@ -69,7 +69,7 @@ The code used in the example is rendered below. The dog was my late husband's wo
 
 For now, I’ve left the lack of Alt text in my avatar photo unresolved, but plan to resolve it soon. Hopefully, an Internet stranger friend has a snappy solution to share with me. XD
 
-### Why I Plan To Switch To Quarto
+### Why I Might Switch To Quarto
 
 While I'm happy with my current set-up, I can't ignore that blogdown and Hugo Apéro feel like old technology. I've read several posts from 2022 by bloggers discussing their transitions away from blogdown and encountered numerous abandoned Hugo Apéro-themed sites. Perhaps I'm just experiencing the frequency illusion (the Baader-Meinhof phenomenon), where you start noticing red cars everywhere once you start looking for them. However, I'm ominously running blogdown version 0.80.0, whereas the latest release is 1.19.1. I had to roll back to version 0.80.0 because the newer versions introduced compatibility issues and caused the site to fail to build on Netlify, a popular platform for hosting static websites. This gives me a bit of existential dread every time I hit Push, wondering if my site is going to fail to build. I've learned to dread Netlify's cryptic error message: "Build script returned non-zero exit code: 2." So helpful. XD
 
