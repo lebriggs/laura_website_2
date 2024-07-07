@@ -8,15 +8,17 @@ draft: false
 excerpt: |
   This script automates the installation and loading of R packages, including error handling and detailed feedback. It's ideal for those of us whose eyes glaze over at the wall of red text while packages are being installed in R. Let me save you from the horror of scrolling up to check if everything installed and loaded properly.
 layout: single
+tags:
+- "post_id: 002"
+- "R code"
+- "Package handling"
+- "Error handling"
+- "Automating workflow in R"
+- "Lazy coding"
 categories:
-- Blog post
-- R
-- R code
-- Package handling
-- Workflow process
-- Error handling
-- Automating workflow in R
-- Lazy coding
+- "Blog post"
+- "R"
+- "Workflow process"
 ---
 
 ### What's The Point Of This R Script?
