@@ -13,14 +13,17 @@ location: "Victoria, British Columbia"
 draft: false
 # layout options: single, single-sidebar
 layout: single
+tags:
+- "post_id: 007"
+- "Diagram"
+- "R code"
 categories:
-- workshop
-- data cleaning
-- diagram
-- R Studio
-- data analysis
-- GSD data
-- active learning
+- "Workshop"
+- "Data cleaning"
+- "Data analysis"
+- "GSD health data"
+- "Active learning"
+- "R"
 links:
 - icon: slideshare
   icon_pack: fab
