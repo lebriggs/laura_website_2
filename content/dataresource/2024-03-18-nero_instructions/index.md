@@ -8,19 +8,22 @@ Have you ever wished for a visual aid to communicate your analysis plan? You're 
 date: "2024-03-18"
 author: "Laura Briggs"
 draft: false
+layout: single
 images:
 series:
 tags:
+- "post_id: 004"
+- "Diagram"
+- "R code"
+- "Canva"
 categories:
-  - workshop
-  - data cleaning
-  - diagram
-  - R Studio
-  - Canva
-  - data analysis
-  - GSD data
-  - active learning
-layout: single
+- "Data resource"
+- "Data cleaning"
+- "Data analysis"
+- "GSD health data"
+- "Active learning"
+- "R"
+- "Workshop"
 ---
 
 ### A Data Pre-Analysis Plan Using Canva: Workshop Description
