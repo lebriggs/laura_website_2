@@ -8,16 +8,18 @@ draft: false
 excerpt: |
   Welcome to my new website that's still under construction. Even though it's 2024, the site is built using R, blogdown, and Hugo Apéro. Let me explain why this is totally on brand for me.
 layout: single
+tags:
+- "post_id: 001"
+- "R code"
+- "Markdown"
+- "Images in Markdown"
+- "Alternative text"
 categories:
-- Blog post
-- New website
-- Hugo Apéro
-- R
-- R code
-- Markdown
-- Images in Markdown
-- Alternative text
-- Quarto
+- "Blog post"
+- "R"
+- "Hugo Apéro"
+- "Quarto"
+- "New website"
 ---
 
 ### Greetings
