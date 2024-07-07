@@ -5,20 +5,22 @@ excerpt: "The Nero vom Buchonia dataset contains show ratings, performance title
 date: "2024-03-18"
 author: "Laura Briggs"
 draft: false
+layout: single
 images:
 series:
 tags:
+- "post_id: 003"
+- "Diagram"
+- "R code"
+- "Canva"
 categories:
-  - workshop
-  - data cleaning
-  - diagram
-  - R script
-  - R Studio
-  - Canva
-  - data analysis
-  - GSD data
-  - active learning
-layout: single
+- "Data resource"
+- "Data cleaning"
+- "Data analysis"
+- "GSD health data"
+- "Active learning"
+- "R"
+- "Workshop"
 ---
 
 ```{r include=FALSE}

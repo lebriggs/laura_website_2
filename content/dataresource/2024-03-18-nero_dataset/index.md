@@ -5,20 +5,22 @@ excerpt: "The Nero vom Buchonia dataset contains show ratings, performance title
 date: "2024-03-18"
 author: "Laura Briggs"
 draft: false
+layout: single
 images:
 series:
 tags:
+- "post_id: 003"
+- "Diagram"
+- "R code"
+- "Canva"
 categories:
-  - workshop
-  - data cleaning
-  - diagram
-  - R script
-  - R Studio
-  - Canva
-  - data analysis
-  - GSD data
-  - active learning
-layout: single
+- "Data resource"
+- "Data cleaning"
+- "Data analysis"
+- "GSD health data"
+- "Active learning"
+- "R"
+- "Workshop"
 ---
 
 ### Description Of The Dataset
@@ -44,23 +46,23 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
 
 ### The Dataset
 
-<div id="bnecvafcom" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="rdhpwjzexk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#bnecvafcom table {
+#rdhpwjzexk table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-&#10;#bnecvafcom thead, #bnecvafcom tbody, #bnecvafcom tfoot, #bnecvafcom tr, #bnecvafcom td, #bnecvafcom th {
+&#10;#rdhpwjzexk thead, #rdhpwjzexk tbody, #rdhpwjzexk tfoot, #rdhpwjzexk tr, #rdhpwjzexk td, #rdhpwjzexk th {
   border-style: none;
 }
-&#10;#bnecvafcom p {
+&#10;#rdhpwjzexk p {
   margin: 0;
   padding: 0;
 }
-&#10;#bnecvafcom .gt_table {
+&#10;#rdhpwjzexk .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -85,11 +87,11 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#bnecvafcom .gt_caption {
+&#10;#rdhpwjzexk .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#bnecvafcom .gt_title {
+&#10;#rdhpwjzexk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -100,7 +102,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#bnecvafcom .gt_subtitle {
+&#10;#rdhpwjzexk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -111,7 +113,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#bnecvafcom .gt_heading {
+&#10;#rdhpwjzexk .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -122,12 +124,12 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#bnecvafcom .gt_bottom_border {
+&#10;#rdhpwjzexk .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#bnecvafcom .gt_col_headings {
+&#10;#rdhpwjzexk .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -141,7 +143,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#bnecvafcom .gt_col_heading {
+&#10;#rdhpwjzexk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 12px;
@@ -160,7 +162,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#bnecvafcom .gt_column_spanner_outer {
+&#10;#rdhpwjzexk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 12px;
@@ -171,13 +173,13 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#bnecvafcom .gt_column_spanner_outer:first-child {
+&#10;#rdhpwjzexk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#bnecvafcom .gt_column_spanner_outer:last-child {
+&#10;#rdhpwjzexk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#bnecvafcom .gt_column_spanner {
+&#10;#rdhpwjzexk .gt_column_spanner {
   border-bottom-style: none;
   border-bottom-width: 1px;
   border-bottom-color: #334422;
@@ -188,10 +190,10 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   display: inline-block;
   width: 100%;
 }
-&#10;#bnecvafcom .gt_spanner_row {
+&#10;#rdhpwjzexk .gt_spanner_row {
   border-bottom-style: hidden;
 }
-&#10;#bnecvafcom .gt_group_heading {
+&#10;#rdhpwjzexk .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -216,7 +218,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   vertical-align: middle;
   text-align: left;
 }
-&#10;#bnecvafcom .gt_empty_group_heading {
+&#10;#rdhpwjzexk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -230,13 +232,13 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-bottom-color: #D3D3D3;
   vertical-align: middle;
 }
-&#10;#bnecvafcom .gt_from_md > :first-child {
+&#10;#rdhpwjzexk .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#bnecvafcom .gt_from_md > :last-child {
+&#10;#rdhpwjzexk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#bnecvafcom .gt_row {
+&#10;#rdhpwjzexk .gt_row {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 5px;
@@ -254,7 +256,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#bnecvafcom .gt_stub {
+&#10;#rdhpwjzexk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -266,7 +268,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#bnecvafcom .gt_stub_row_group {
+&#10;#rdhpwjzexk .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -279,13 +281,13 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#bnecvafcom .gt_row_group_first td {
+&#10;#rdhpwjzexk .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#bnecvafcom .gt_row_group_first th {
+&#10;#rdhpwjzexk .gt_row_group_first th {
   border-top-width: 2px;
 }
-&#10;#bnecvafcom .gt_summary_row {
+&#10;#rdhpwjzexk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -294,14 +296,14 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#bnecvafcom .gt_first_summary_row {
+&#10;#rdhpwjzexk .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#bnecvafcom .gt_first_summary_row.thick {
+&#10;#rdhpwjzexk .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#bnecvafcom .gt_last_summary_row {
+&#10;#rdhpwjzexk .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -310,7 +312,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#bnecvafcom .gt_grand_summary_row {
+&#10;#rdhpwjzexk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -319,7 +321,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#bnecvafcom .gt_first_grand_summary_row {
+&#10;#rdhpwjzexk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -328,7 +330,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#bnecvafcom .gt_last_grand_summary_row_top {
+&#10;#rdhpwjzexk .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -337,10 +339,10 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-bottom-width: 6px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#bnecvafcom .gt_striped {
+&#10;#rdhpwjzexk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#bnecvafcom .gt_table_body {
+&#10;#rdhpwjzexk .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -348,7 +350,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-bottom-width: 2px;
   border-bottom-color: #FFFFFF;
 }
-&#10;#bnecvafcom .gt_footnotes {
+&#10;#rdhpwjzexk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -361,7 +363,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#bnecvafcom .gt_footnote {
+&#10;#rdhpwjzexk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -369,7 +371,7 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#bnecvafcom .gt_sourcenotes {
+&#10;#rdhpwjzexk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -382,57 +384,57 @@ Thank you to Jennifer Lee, Nero’s owner, for helping to create this dataset fo
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#bnecvafcom .gt_sourcenote {
+&#10;#rdhpwjzexk .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#bnecvafcom .gt_left {
+&#10;#rdhpwjzexk .gt_left {
   text-align: left;
 }
-&#10;#bnecvafcom .gt_center {
+&#10;#rdhpwjzexk .gt_center {
   text-align: center;
 }
-&#10;#bnecvafcom .gt_right {
+&#10;#rdhpwjzexk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#bnecvafcom .gt_font_normal {
+&#10;#rdhpwjzexk .gt_font_normal {
   font-weight: normal;
 }
-&#10;#bnecvafcom .gt_font_bold {
+&#10;#rdhpwjzexk .gt_font_bold {
   font-weight: bold;
 }
-&#10;#bnecvafcom .gt_font_italic {
+&#10;#rdhpwjzexk .gt_font_italic {
   font-style: italic;
 }
-&#10;#bnecvafcom .gt_super {
+&#10;#rdhpwjzexk .gt_super {
   font-size: 65%;
 }
-&#10;#bnecvafcom .gt_footnote_marks {
+&#10;#rdhpwjzexk .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
-&#10;#bnecvafcom .gt_asterisk {
+&#10;#rdhpwjzexk .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#bnecvafcom .gt_indent_1 {
+&#10;#rdhpwjzexk .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#bnecvafcom .gt_indent_2 {
+&#10;#rdhpwjzexk .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#bnecvafcom .gt_indent_3 {
+&#10;#rdhpwjzexk .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#bnecvafcom .gt_indent_4 {
+&#10;#rdhpwjzexk .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#bnecvafcom .gt_indent_5 {
+&#10;#rdhpwjzexk .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
