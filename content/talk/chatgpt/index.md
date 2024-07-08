@@ -13,15 +13,19 @@ location: "Victoria, British Columbia"
 draft: false
 # layout options: single, single-sidebar
 layout: single
+tags:
+- "post_id: 008"
+- "Diagram"
+- "Flow diagram"
 categories:
-- presentation
-- ChatGPT
-- prompt design
-- information literacy framework
-- process diagram
-- data cleaning
-- R Studio
-- GSD data
+- "Presentation"
+- "ChatGPT"
+- "Prompt design"
+- "Information literacy"
+- "Critical thinking"
+- "Data cleaning"
+- "R"
+- "GSD data"
 links:
 - icon: slideshare
   icon_pack: fab
