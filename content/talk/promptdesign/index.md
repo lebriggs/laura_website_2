@@ -13,13 +13,15 @@ location: "Victoria, British Columbia"
 draft: false
 # layout options: single, single-sidebar
 layout: single
+tags:
+- "post_id: 009"
+- "Mind map"
+- "Diagram"
 categories:
-- presentation
-- course
-- ChatGPT
-- prompt design
-- mind map
-- whiteboard
+- "Presentation"
+- "Online course"
+- "ChatGPT"
+- "Prompt design"
 links:
 - icon: slideshare
   icon_pack: fab
