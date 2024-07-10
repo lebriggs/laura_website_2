@@ -25,6 +25,12 @@ categories:
 
 Words go here.
 
+### Embedded Gist 
+
+Here is the embedded gist.
+
+<script src="https://gist.github.com/lebriggs/736ff4f9afd5e133b6aaa4b76cabd53f.js"></script>
+
 ### Subscribe To New Blog Posts
 
 If you would like to be notified when I sporadically publish a new blog post then please subscribe using [this tiny form](https://dashboard.mailerlite.com/forms/1012938/126123917064537119/share). 
