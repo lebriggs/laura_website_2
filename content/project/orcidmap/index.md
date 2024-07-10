@@ -5,7 +5,7 @@ title: "ORCID Data Visualization With R."
 subtitle: ""
 draft: false
 excerpt: |
- Creating a new version of the ORCID US Community - Drexel University data visualization with R, Leaflet, and Shiny. This interactive map showcases collaborations among university researchers, highlighting connections both within their home institution and internationally.
+ Creating a new version of the visualization developed by a partnership between the ORCID US Community and Drexel University, originally created with R and Tableau, now using R, Leaflet, and Shiny. This interactive map showcases collaborations among university researchers, highlighting connections both within their home institution and internationally.
 links:
 - icon: github
   icon_pack: fab
