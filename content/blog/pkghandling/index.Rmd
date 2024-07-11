@@ -59,7 +59,7 @@ The script works by first checking if each required package is already installed
 
 In simple terms, a **dependency** is an R package that another package needs to function properly. Think of it like a recipe: if you're baking a traditional cake, you need flour, sugar, and eggs. Similarly, many R packages require other packages (dependencies) to function correctly. This script ensures that all of the required dependencies are installed so that the packages work without any issues.
 
-#### Why Don't We Use The require Function?
+#### Why Don't We Use The 'require' Function?
 
 At the beginning of the script, we use **install.packages()** instead of **require()** because **require()** only loads a package and doesn't install it if it's missing. By using **install.packages()**, we ensure that any missing package gets installed first before attempting to load it. This approach helps prevent disconcerting errors and helps makes the script more robust.
 
@@ -128,9 +128,9 @@ lapply(pkg2, require, character.only = TRUE)
 
 ```
 
-#### Why Use require()
+#### Why Use The 'require' Function?
 
-Unlike in the previous section ([Why Don't We Use The require Function](#why-dont-we-use-the-require-function)), using **require()** is now the correct choice because:
+Unlike in the previous section ([Why Don't We Use The 'require' Function](#why-dont-we-use-the-'require'-function)), using **require()** is now the correct choice because:
 
 - **Convenience:** <br>
 **require()** returns TRUE if the package is successfully loaded and FALSE otherwise, which can be useful for conditional checks.
