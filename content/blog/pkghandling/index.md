@@ -128,7 +128,7 @@ lapply(pkg2, require, character.only = TRUE)
 
 #### Why Use The 'require' Function?
 
-Unlike in the previous section ([Why Don't We Use The 'require' Function](#why-dont-we-use-the-'require'-function)), using **require()** is now the correct choice because:
+Unlike in the previous section ([Why Don't We Use The 'require' Function](#why-dont-we-use-the-require-function)), using **require()** is now the correct choice because:
 
 - **Convenience:** <br>
 **require()** returns TRUE if the package is successfully loaded and FALSE otherwise, which can be useful for conditional checks.
