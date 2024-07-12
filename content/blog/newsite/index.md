@@ -17,6 +17,7 @@ tags:
 categories:
 - "Blog post"
 - "R"
+- "R tutorial"
 - "Hugo Apéro"
 - "Quarto"
 - "New website"
