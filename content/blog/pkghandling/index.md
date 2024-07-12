@@ -30,9 +30,9 @@ categories:
 
 ### What's The Point Of This R Script?
 
-If you've ever felt your eyes glaze over at the wall of red text while installing R packages, this script is for you. It automates the installation and loading of R packages, providing clear feedback on whether each package was successfully installed or loaded, or if there were any errors. No more scrolling up to see if everything installed and loaded properly. This script takes the hassle out of package management, letting you focus on the fun stuff—actually analyzing your data!
+If you've ever felt your eyes glaze over at the wall of red text while installing R packages, this script is for you. It automates the installation and loading of R packages, providing clear feedback on whether each package was successfully installed or loaded, or if there were any errors. No more scrolling up to see if everything installed and loaded properly. This script takes the hassle out of package management, letting you focus on the fun stuff— actually analyzing your data!
 
-This post likely seems ridiculously verbose, but without thorough documentation, I won't remember my code choices in two weeks— let's be honest, maybe not even two days. XD
+This post likely seems ridiculously verbose, but without thorough documentation, I won't remember my code choices in two weeks— let's be honest, maybe not even after two days. XD
 
 ### Features
 
@@ -48,7 +48,7 @@ Captures and reports any errors that occur during installation or loading, makin
 - **Dependency Management:** <br>
 Ensures all necessary dependencies are installed with the required packages.
 
-- **Readable Code:** <br>
+- **Understandable Code:** <br>
 The code contains detailed comments and is simple to understand.
 
 ### How It Works
@@ -116,7 +116,9 @@ To use the script, follow these steps:
 
 #### Subsequent Sessions
 
-The script also includes a code section for loading the packages in subsequent R sessions, ensuring they are available without reinstalling them. Use this section when you start a new R session and want to load the previously installed packages without going through the installation process again.
+The script also includes a section for loading packages in subsequent R sessions, so you don't have to repeat the installation process.
+
+Here is the line of code in the script:
 
 
 ``` r
@@ -128,7 +130,7 @@ lapply(pkg2, require, character.only = TRUE)
 
 #### Why Use The 'require' Function?
 
-Unlike in the previous section ([Why Don't We Use The 'require' Function](#why-dont-we-use-the-require-function)), using **require()** is now the correct choice because:
+Unlike in the previous section ([Why Don't We Use The 'require' Function](#why-dont-we-use-the-require-function)), using **require()** is the correct choice for the susequent packages line of code because:
 
 - **Convenience:** <br>
 **require()** returns TRUE if the package is successfully loaded and FALSE otherwise, which can be useful for conditional checks.
@@ -194,7 +196,7 @@ Similar to **gt**, **gtExtras** was installed and loaded successfully.
 
 A [Gist](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists) is a simple way to share code snippets, notes, or any type of text content. It’s a feature provided by GitHub that allows you to create and share single files or collections of related files.
 
-Using a Gist offers two primary benefits for me:
+From my perspective, using a Gist for sharing code offers two primary benefits:
 
 - **Version Control:** <br>
 Similar to GitHub repositories, Gists have version control, allowing me to track changes and revert to previous versions if needed.
@@ -226,7 +228,7 @@ Allow users to choose where to download packages from, such as CRAN, Bioconducto
 
 ### Conclusion
 
-Whew! We've finally arrived at the end of this ridiculously long blog post. I appreciate the irony of providing such thorough documentation for a script that I wrote because I am a lazy coder.
+Whew! We've finally arrived at the end of this ridiculously long blog post. I appreciate the irony of providing such thorough documentation for a script that I originally wrote because I am a lazy coder.
 
 In summary:
 
