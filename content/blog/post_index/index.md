@@ -1,5 +1,5 @@
 ---
-title: "Too Tired To Type:"
+title: "Too Tired To Type"
 subtitle: "YAML Metadata Updater For Content Files"
 author: Laura Briggs
 show_author_byline: true
