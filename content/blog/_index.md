@@ -8,7 +8,7 @@ show_author_byline: false
 show_post_date: true
 show_button_links: false
 # for listing page layout
-layout: list-grid # list, list-sidebar, list-grid
+layout: list # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
