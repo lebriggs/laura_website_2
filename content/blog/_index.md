@@ -1,6 +1,7 @@
 ---
 title: The Blog
 description: |
+ Random thoughts about data analysis with a focus on R.
 author: "Laura Briggs"
 show_post_thumbnail: true
 thumbnail_left: true # for list-sidebar only
