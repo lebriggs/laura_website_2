@@ -6,7 +6,7 @@ show_author_byline: true
 date: "2024-07-13"
 draft: false
 excerpt: |
-  A description goes here.
+  This script automates indexing your Markdown files with tags, categories, and the current date. Perfect for those of us who are too tired to update YAML metadata manually, it handles the tedious work for managing blog posts and other content files!
 layout: single
 links:
 - icon: github-square
