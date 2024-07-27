@@ -46,10 +46,10 @@ cat("summary:\n", unlist(install_results), sep = "\n")
 # II. Subsequent Session(s): Load Required Packages
 
 #list of required packages that were previously installed
-#pkg2 <- c("usethis", "remotes", "distill", "postcards", "blogdown", "config")
+pkg2 <- c("usethis", "remotes", "distill", "postcards", "blogdown", "config")
 
 #load packages that were previously installed
-#lapply(pkg2, require, character.only = TRUE)
+lapply(pkg2, require, character.only = TRUE)
 
 #III. Set-up The R Environment
 
