@@ -69,7 +69,9 @@ Categories and tags help structure my website and enhance the user experience by
 Think of categories as broad topics or the main sections of my website. Each piece of content can fit into one or more categories, representing its primary focus areas. For example, on my site, categories can include "Blog post," "R tutorial," "Workshop," and "Presentation." These are just examples, and there are other categories that content can be assigned to based on its main themes. Generally, you should have fewer categories than tags to keep the broad topics manageable. By navigating through categories, readers can easily explore related content and discover new areas of interest.
 
 - **Tags:**<br>
-Tags are more specific keywords that describe details of my content. They are like labels that can be applied to multiple pieces of content across different categories. For example, a blog post in the "R tutorial" category might have tags like "R code," "Lazy coding," or "Package handling." Tags help users find content that shares specific characteristics or topics, regardless of the category it belongs to. While my current site setup with Hugo Apéro doesn't display tags in the same way as categories, they still play a crucial role in organizing and linking content internally. For now, you can find all of my tags listed here. I'm working on making my tags visible to readers.
+Tags are more specific keywords that describe details of my content. They are like labels that can be applied to multiple pieces of content across different categories. For example, a blog post in the "R tutorial" category might have tags like "R code," "Lazy coding," or "Package handling." Tags help users find content that shares specific characteristics or topics, regardless of the category it belongs to.
+
+At the very bottom of each content page, you will find **🞂Details**. Clicking on the arrow head (**🞂**) will list the Categories, Tags, and also suggest related pages to read on my site (**See Also**). While my current site set-up with Hugo Apéro doesn't display tags as visibly in the same way as categories, they still play a crucial role in organizing and linking content internally
 
 Now, let's look at an example of how categories and tags function for the blog post you are reading. The categories and tags are specified in the YAML front matter.
 
@@ -110,8 +112,7 @@ Now that you understand why I embarked on this coding adventure to automate the 
 
 **1. Refactor and Simplify**
 
-- **What Refactor Means:**<br>
-Refactoring is all about cleaning up the code without changing how it functions. This makes it easier for people who aren't me to understand and maintain the code.
+**Refactoring** (or restructuring) is all about cleaning up the code without changing how it functions. This process makes the code more organized and readable, making it easier for people who aren't me to understand and maintain it.
 
 - **Combine Related Functions:**<br>
 I'll look for places where I can combine similar functions to make the code cleaner. For example, if reading and writing the YAML front matter share many steps, I’ll merge them into a single function.
