@@ -13,6 +13,10 @@ links:
   icon_pack: fab
   name: GIST
   url: "https://gist.github.com/lebriggs/736ff4f9afd5e133b6aaa4b76cabd53f"
+categories:
+- "Blog post"
+- "R tutorial"
+- "Tools"
 tags:
 - "post_id: 002"
 - "R code"
@@ -21,11 +25,7 @@ tags:
 - "Automating workflow in R"
 - "Lazy coding"
 - "GitHub Gist"
-categories:
-- "Blog post"
-- "R"
 - "Workflow process"
-- "R tutorial"
 ---
 
 ### What's The Point Of This R Script?

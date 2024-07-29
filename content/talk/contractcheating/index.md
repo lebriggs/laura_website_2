@@ -13,16 +13,18 @@ location: "Regina, Saskatchewan"
 draft: false
 # layout options: single, single-sidebar
 layout: single
+categories:
+- "Presentation"
+- "Research ethics"
+- "Transferable skills acquisition"
 tags:
 - "post_id: 005"
 - "Diagram"
-categories:
-- "Presentation"
 - "Contract cheating"
 - "Critical thinking"
 - "Problem solving"
 - "Information literacy"
-- "Chemistry"
+- "Chemical information literacy"
 links:
 - icon: slideshare
   icon_pack: fab

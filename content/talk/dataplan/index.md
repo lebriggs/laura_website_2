@@ -13,17 +13,24 @@ location: "Victoria, British Columbia"
 draft: false
 # layout options: single, single-sidebar
 layout: single
+series: "Nero vom Buchonia"
+categories:
+- "Data analysis"
+- "GSD data"
+- "R tutorial"
+- "Workshop"
+- "Transferable skills acquisition"
+- "Tools"
+- "Presentation"
 tags:
 - "post_id: 007"
-- "Diagram"
-- "R code"
-categories:
-- "Workshop"
 - "Data cleaning"
-- "Data analysis"
 - "GSD health data"
+- "Web scraping"
+- "Diagram"
+- "Canva"
 - "Active learning"
-- "R"
+- "Data visualization"
 links:
 - icon: slideshare
   icon_pack: fab

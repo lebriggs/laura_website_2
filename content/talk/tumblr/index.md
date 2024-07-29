@@ -15,17 +15,16 @@ location: "Victoria, British Columbia"
 draft: false
 # layout options: single, single-sidebar
 layout: single
-tags:
+Categories:
+- "Presentation"
+- "Research ethics"
+- "Data analysis"
+Tags:
 - "post_id: 006"
 - "Diagram"
-- "Mind map"
-categories:
-- "Presentation"
-- "Tumblr"
-- "Social media data"
 - "Informed consent"
-- "R"
-- "Data analysis"
+- "Social media data"
+- "Tumblr API"
 links:
 - icon: slideshare
   icon_pack: fab

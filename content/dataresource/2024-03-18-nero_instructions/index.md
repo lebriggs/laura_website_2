@@ -10,20 +10,17 @@ author: "Laura Briggs"
 draft: false
 layout: single
 images:
-series:
+series: "Nero vom Buchonia"
+categories:
+- "Data analysis"
+- "GSD data"
+- "R tutorial"
+- "Workshop"
+- "Presentation"
 tags:
 - "post_id: 004"
-- "Diagram"
-- "R code"
-- "Canva"
-categories:
-- "Data resource"
 - "Data cleaning"
-- "Data analysis"
 - "GSD health data"
-- "Active learning"
-- "R"
-- "Workshop"
 ---
 
 ### A Data Pre-Analysis Plan Using Canva: Workshop Description

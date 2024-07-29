@@ -13,19 +13,24 @@ location: "Victoria, British Columbia"
 draft: false
 # layout options: single, single-sidebar
 layout: single
+series: "Nero vom Buchonia"
+categories:
+- "Presentation"
+- "Large language model"
+- "Transferable skills acquisition"
+- "R tutorial"
+- "Data analysis"
+- "GSD data"
 tags:
 - "post_id: 008"
 - "Diagram"
-- "Flow diagram"
-categories:
-- "Presentation"
 - "ChatGPT"
 - "Prompt design"
 - "Information literacy"
 - "Critical thinking"
 - "Data cleaning"
-- "R"
-- "GSD data"
+- "GSD health data"
+- "AI literacy"
 links:
 - icon: slideshare
   icon_pack: fab

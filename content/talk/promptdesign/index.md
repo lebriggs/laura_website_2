@@ -13,15 +13,18 @@ location: "Victoria, British Columbia"
 draft: false
 # layout options: single, single-sidebar
 layout: single
-tags:
-- "post_id: 009"
-- "Mind map"
-- "Diagram"
 categories:
 - "Presentation"
+- "Large language model"
+- "Instructional design"
+- "Transferable skills acquisition"
+tags:
+- "post_id: 009"
+- "Diagram"
 - "Online course"
 - "ChatGPT"
 - "Prompt design"
+- "AI literacy"
 links:
 - icon: slideshare
   icon_pack: fab
@@ -31,10 +34,6 @@ links:
   icon_pack: fas
   name: WHITEBOARD
   url: https://t.ly/2Jjub
-- icon: graduation-cap
-  icon_pack: fa
-  name: COURSE
-  url: https://libguides.uvic.ca/promptdesign/welcome
 ---
 
 * I'm confident that my 2024 peaked right after I narrated the development of the mind map. You know how much I love diagrams but this one has a lot going on - even for me.

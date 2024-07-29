@@ -12,19 +12,18 @@ links:
   name: code
   url: ""
 layout: single
-tags:
+Categories:
+- "Project"
+- "R tutorial"
+- "Data analysis"
+- "Tools"
+Tags:
 - "post_id: 010"
-- "R code"
-- "Daiagram"
 - "Map"
 - "Leaflet"
 - "Shiny"
 - "ORCID API"
-categories:
-- "Project"
-- "R"
 - "Data cleaning"
-- "Data analysis"
 - "Data visualization"
 ---
 
