@@ -13,7 +13,7 @@ location: "Victoria, British Columbia"
 draft: false
 # layout options: single, single-sidebar
 layout: single
-series:
+series: "Nero vom Buchonia"
 categories:
 - "Presentation"
 - "Large language model"
