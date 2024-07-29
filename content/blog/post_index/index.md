@@ -65,17 +65,16 @@ As a data librarian, I understand the importance of a solid organizational frame
 
 Categories and tags help structure my website and enhance the user experience by making it easier to find related content. They also streamline content management by providing a clear organizational structure, making it simpler to categorize and locate posts.
 
-- **Categories:**
+- **Categories:**<br>
 Think of categories as broad topics or the main sections of my website. Each piece of content can fit into one or more categories, representing its primary focus areas. For example, on my site, categories can include "Blog post," "R tutorial," "Workshop," and "Presentation." These are just examples, and there are other categories that content can be assigned to based on its main themes. Generally, you should have fewer categories than tags to keep the broad topics manageable. By navigating through categories, readers can easily explore related content and discover new areas of interest.
 
-- **Tags:**
+- **Tags:**<br>
 Tags are more specific keywords that describe details of my content. They are like labels that can be applied to multiple pieces of content across different categories. For example, a blog post in the "R tutorial" category might have tags like "R code," "Lazy coding," or "Package handling." Tags help users find content that shares specific characteristics or topics, regardless of the category it belongs to. While my current site setup with Hugo Apéro doesn't display tags in the same way as categories, they still play a crucial role in organizing and linking content internally. For now, you can find all of my tags listed here. I'm working on making my tags visible to readers.
 
-Now, let's look at an example of how categories and tags function for the blog post you are reading:
+Now, let's look at an example of how categories and tags function for the blog post you are reading. The categories and tags are specified in the YAML front matter.
 
-In my Markdown files, categories and tags are specified in the YAML front matter.
-
-**Example:** YAML for the blog post you are currently reading.
+**Example:**<br>
+YAML in the Markdown file for the blog post you are currently reading.
 
 
 ``` r
@@ -111,22 +110,22 @@ Now that you understand why I embarked on this coding adventure to automate the 
 
 **1. Refactor and Simplify**
 
-- **What Refactor Means:**
+- **What Refactor Means:**<br>
 Refactoring is all about cleaning up the code without changing how it functions. This makes it easier for people who aren't me to understand and maintain the code.
 
-- **Combine Related Functions:**
+- **Combine Related Functions:**<br>
 I'll look for places where I can combine similar functions to make the code cleaner. For example, if reading and writing the YAML front matter share many steps, I’ll merge them into a single function.
 
-- **Streamline Logic:** 
+- **Streamline Logic:**<br>
 I'll examine each function and see if there are any redundant or overly complicated steps that can be simplified. This will make my code more efficient and easier to follow.
 
 **2. Add Error Handling** 
 
-- **Critical Areas for Error Handling:**
+- **Critical Areas For Error Handling:**<br>
 I need to pay special attention to the function that reads the YAML front matter (**read_yaml_front_matter**), which is step 2 in the script. This function needs solid error handling to deal with cases where the Markdown file doesn't exist, the YAML delimiters are missing, or the YAML content is messed up. Making sure this function is rock-solid will prevent errors from cascading through the rest of my script.
 
-- **Input Validation:** 
-'ll make sure the input parameters, like tags and categories such as "Information literacy" and "Transferable skills acquisition," are verified before processing. This will help prevent "unexpected" issues, like spelling "Diagram" incorrectly for the fifth time, and make my script more robust.
+- **Input Validation:**<br>
+I'll make sure the input parameters, like tags and categories such as "Information literacy" and "Transferable skills acquisition," are verified before processing. This will help prevent "unexpected" issues, like spelling "Diagram" incorrectly for the fifth time, and make my script more robust.
 
 ### Subscribe To New Blog Posts
 
