@@ -6,90 +6,123 @@ show_author_byline: true
 date: "2024-07-29"
 draft: false
 excerpt: |
-  This script automates indexing your Markdown files with tags, categories, and the current date. Perfect for those of us who are too tired to update YAML metadata manually, it handles the tedious work for managing blog posts and other content files!
+  This script automates indexing your Markdown files with tags, categories, the post ID number, and the current date. Perfect for those of us who are too tired to update YAML metadata manually, it handles the tedious work for managing blog posts and other content files!
 layout: single
 links:
 - icon: github-square
   icon_pack: fab
   name: GIST
-  url: "www.url.com"
+  url: "www.urlgoeshere.com"
 categories:
 - "R tutorial"
-- "R"
-- "New website"
 - "Blog post"
-- "Workflow process"
+- "Website design"
 tags:
 - "post_id: 011"
 - "R code"
 - "Lazy coding"
 - "Automating workflow in R"
-- "Post indexing"
+- "Categories and tags"
 ---
 
 ### What Problem Am I Trying To Solve?
 
-Every content page (blog post, presentation, or project page, etc.) on my website is created from a Markdown file that requires me to update a YAML template. YAML (YAML Ain't Markup Language), located at the top of each Markdown file, is used to format essential information about the content. For the librarians reading this, the YAML contains the metadata information for this blog post.
+Managing a website can be a tedious task, especially when it involves manually updating metadata for each content page. Every content page (blog post, presentation page, project page, etc.) on my website is created from a Markdown file that requires me to manually update a YAML template. YAML (YAML Ain't Markup Language), located at the top of each Markdown file, is used to format essential information about the content. For the librarians reading this, the YAML contains the metadata information for this blog post.
 
-I need an R script that contains these features:
+I felt R should be filling out the YAML templates instead of me. Put the robot to work!
 
-- Adds or modifies Laura-specified tags and categories, so I don't have to remember them.
+Therefore, I required an R script that contains these features:
+
+- Adds or modifies Laura-specified tags and categories, so I don't have to remember them. As a librarian who paid for four cataloguing courses in library school, I am thrilled to finally apply my indexing knowledge.
 
 - Ensures the date field is set to today's date if it's empty, because I don’t want to be forced to consult a calendar.
 
 - Increments the highest post ID number, because I definitely don't want to track this information manually.
 
-- Collects previous tags and categories from all Markdown files in several specified of my website's directories; everything is kept organized without requiring me to maintain a dreaded spreadsheet.
+- Collects previous tags and categories from all Markdown files in several specified directories of my website. Everything is kept organized without requiring me to maintain a dreaded spreadsheet.
 
-- Ensures all tags and categories are properly formatted and unique. And as a librarian who paid for four cataloguing courses in library school, I am thrilled to finally apply this knowledge.
+- Ensures all tags and categories are properly formatted and unique. 
 
 ### Maximum Effort
 
-> Maximum effort.
+I'm probably spending more time creating this script than it would take to fill out the templates manually, but as Deadpool says before embarking on a reckless adventure:
 
-— Deadpool, just before he dropped from an overpass and through the sunroof of a moving SUV filled with bad guys (*Deadpool*, 2016).
+> **Maximum effort.**
 
-Writing a script that included all the features I wanted turned out to be way more work than I expected. Maximum effort. It is surprisingly difficult to maintain the correct YAML structure after altering it. As with all my personal code, I was motivated to create this script because I am lazy. I wanted to automate the process of creating the YAML and offload the tedious organizational work to R.
+— Deadpool, just before he dropped from a highway overpass and through the sunroof of a moving SUV filled with bad guys (*Deadpool*, 2016).
 
-Currently, the script is only in the first draft stage—it roughly contains the features I want, but it's clunky and overly complicated. One of my data science instructors once remarked, "Laura, your code always works but it's definitely not elegant." Although his criticism stung, it was valid, so I'm striving to turn my pedestrian code into something more refined.
+Writing an R script that included all of the features I wanted turned out to be a lot more work than I expected. Truly, maximum effort. It is surprisingly difficult to maintain the correct YAML structure after having R alter it. As with all of my personal code, I was motivated to create this script because I am inherently lazy and don't like remembering details. I wanted to automate the process of creating the YAML and offload the tedious organizational work to R.
+
+Currently, the script is only in the first draft stage—it roughly contains the features I want, but it's clunky and overly complicated. One of my data science instructors once remarked to the entire class, "Laura, your code always works but it's definitely not elegant." Although his criticism stung a bit, it was totally valid, so I'm striving to turn my inherently pedestrian code into something more refined.
 
 ### Why Do I Care So Much About Categories And Tags?
 
-Categories and tags are important enough to warrant this kind of code writing effort. Although my site is shiny and new, there are already 30 categories and 34 tags to keep track of! My tiny ADHD brain can't handle this work on its own. As a data librarian, I understand the importance of a solid organizational framework, and as someone who is a lazy coder, I value putting effort into automating tedious tasks. Let me briefly explain how categories and tags are utilized on my website.
+As a data librarian, I understand the importance of a solid organizational framework and robust documentation. That’s why I’m all about automating the tedious tasks, like tracking metadata (hello, categories and tags!), to keep things consistent and efficient. Indeed, the impetus for writing the R script originated because I spelled the tag "Diagram" incorrectly four times. As I sat there fuming while waiting for the website to deploy after the third time I spelled "Diagram" incorrectly, I started jotting down notes about how I could automate the process of adding tags to my presentation page. By the fourth time, I was committed to writing the script. Categories and tags are essential for enhancing the user experience and making content easily discoverable. Even though my website is shiny and new, it already has 13 categories and 36 tags to keep track of. My tiny ADHD brain can't handle this work on its own, which is why I prioritize automating these tedious tasks. The final draft of the R script will ensure that such embarrassing spelling errors are relegated to the past. Let me explain in a bit more detail how categories and tags are utilized on my website.
 
-Categories and tags help structure my website and enhance the user experience by making it easier to find relevant content.
+Categories and tags help structure my website and enhance the user experience by making it easier to find related content. They also streamline content management by providing a clear organizational structure, making it simpler to categorize and locate posts.
 
-- Categories: Think of categories as broad topics or main sections of my website. Each piece of content fits into one category. For example, on my site, categories include "Blog post," "R tutorial," "Workshop," and "Presentation."
+- **Categories:**
+Think of categories as broad topics or the main sections of my website. Each piece of content can fit into one or more categories, representing its primary focus areas. For example, on my site, categories can include "Blog post," "R tutorial," "Workshop," and "Presentation." These are just examples, and there are other categories that content can be assigned to based on its main themes. Generally, you should have fewer categories than tags to keep the broad topics manageable. By navigating through categories, readers can easily explore related content and discover new areas of interest.
 
-- Tags: Tags are more specific keywords that describe details of my content. They are like labels that can be applied to multiple pieces of content across different categories. For example, a blog post in the "R tutorial" category might have tags like "R code," "Lazy coding," or "Package handling."
+- **Tags:**
+Tags are more specific keywords that describe details of my content. They are like labels that can be applied to multiple pieces of content across different categories. For example, a blog post in the "R tutorial" category might have tags like "R code," "Lazy coding," or "Package handling." Tags help users find content that shares specific characteristics or topics, regardless of the category it belongs to. While my current site setup with Hugo Apéro doesn't display tags in the same way as categories, they still play a crucial role in organizing and linking content internally. For now, you can find all of my tags listed here. I'm working on making my tags visible to readers.
 
-How they are used:
+Now, let's look at an example of how categories and tags function for the blog post you are reading:
 
-- In my Markdown files, categories and tags are specified in the YAML front matter.
+In my Markdown files, categories and tags are specified in the YAML front matter.
 
-- Here’s how the YAML front matter looks for this blog post:
+**Example:** YAML for the blog post you are currently reading.
 
-*code window goes here*
 
-The R package, blogdown, uses Hugo, a static site generator written in Go, to take these categories and tags and organize my content, making it easier for visitors to navigate my site and find related posts.
-With these functionalities in mind, here are my goals for the second draft:
+``` r
+title: "Too Tired To Type"
+subtitle: "YAML Metadata Updater For Content Files"
+author: Laura Briggs
+show_author_byline: true
+date: "2024-07-29"
+draft: false
+excerpt: |
+  This script automates indexing your Markdown files with tags, categories, the post ID number, and the current date. Perfect for those of us who are too tired to update YAML metadata manually, it handles the tedious work for managing blog posts and other content files!
+layout: single
+links:
+- icon: github-square
+  icon_pack: fab
+  name: GIST
+  url: "https://gist.github.com/lebriggs"
+categories:
+- "R tutorial"
+- "Blog post"
+- "Website design"
+tags:
+- "post_id: 011"
+- "R code"
+- "Lazy coding"
+- "Automating workflow in R"
+- "Categories and tags"
+```
 
-Next Two Steps for Improvement:
+### Next Two Steps For The Script's Improvement
 
-1. Refactor and Simplify:
+Now that you understand why I embarked on this coding adventure to automate the YAML templates, let me share my next steps for refining the second draft of the R script.
 
-- What Refactor Means: Refactoring means to restructure existing code without changing its external behaviour to make it easier to understand and maintain.
+1. **Refactor and Simplify**
 
-- Combine Related Functions: Look for places where I can combine similar functions to make the code cleaner. For example, if reading and writing the YAML front matter share many steps, merge them into a single function.
+- **What Refactor Means:**
+Refactoring is all about cleaning up the code without changing how it functions. This makes it easier for people who aren't me to understand and maintain the code.
 
-- Streamline Logic: I'll take a good look at each function and see if there are any redundant or overly complicated steps that can be simplified. This will make my code more efficient and easier to follow.
-Add Error Handling:
+- **Combine Related Functions:**
+I'll look for places where I can combine similar functions to make the code cleaner. For example, if reading and writing the YAML front matter share many steps, I’ll merge them into a single function.
 
-2. Critical Area for Error Handling: 
+- **Streamline Logic:** 
+I'll examine each function and see if there are any redundant or overly complicated steps that can be simplified. This will make my code more efficient and easier to follow.
 
-- Pay special attention to the function that reads the YAML front matter (read_yaml_front_matter), which is step 2. This step needs solid error handling to deal with cases where the file doesn't exist, the YAML delimiters are missing, or the YAML content is messed up. Making sure this function is rock-solid will prevent errors from spreading through the rest of my script.
+2. **Add Error Handling** 
 
-- Input Validation: I'll make sure the input parameters, like selected_categories and selected_tags, are properly checked before processing. This will help prevent unexpected issues and make my script more reliable.
+- **Critical Areas for Error Handling:**
+I need to pay special attention to the function that reads the YAML front matter (**read_yaml_front_matter**), which is step 2 in the script. This function needs solid error handling to deal with cases where the Markdown file doesn't exist, the YAML delimiters are missing, or the YAML content is messed up. Making sure this function is rock-solid will prevent errors from cascading through the rest of my script.
+
+- **Input Validation:** 
+'ll make sure the input parameters, like tags and categories such as "Information literacy" and "Transferable skills acquisition," are verified before processing. This will help prevent "unexpected" issues, like spelling "Diagram" incorrectly for the fifth time, and make my script more robust.
 
 ### Subscribe To New Blog Posts
 
