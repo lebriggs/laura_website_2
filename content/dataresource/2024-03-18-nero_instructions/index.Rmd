@@ -10,7 +10,6 @@ author: "Laura Briggs"
 draft: false
 layout: single
 images:
-series: "Nero vom Buchonia"
 categories:
 - "Data analysis"
 - "GSD data"

@@ -3,8 +3,8 @@ title: "Too Tired To Type"
 subtitle: "YAML Metadata Updater For Content Files"
 author: Laura Briggs
 show_author_byline: true
-date: "2024-07-27"
-draft: true
+date: "2024-07-29"
+draft: false
 excerpt: |
   This script automates indexing your Markdown files with tags, categories, and the current date. Perfect for those of us who are too tired to update YAML metadata manually, it handles the tedious work for managing blog posts and other content files!
 layout: single
@@ -27,9 +27,70 @@ tags:
 - "Post indexing"
 ---
 
-### What's The Point Of This R Script?
+### What Problem Am I Trying To Solve?
 
-Setting up the framework for the blog post.
+Every content page (blog post, presentation, or project page, etc.) on my website is created from a Markdown file that requires me to update a YAML template. YAML (YAML Ain't Markup Language), located at the top of each Markdown file, is used to format essential information about the content. For the librarians reading this, the YAML contains the metadata information for this blog post.
+
+I need an R script that contains these features:
+
+- Adds or modifies Laura-specified tags and categories, so I don't have to remember them.
+
+- Ensures the date field is set to today's date if it's empty, because I don’t want to be forced to consult a calendar.
+
+- Increments the highest post ID number, because I definitely don't want to track this information manually.
+
+- Collects previous tags and categories from all Markdown files in several specified of my website's directories; everything is kept organized without requiring me to maintain a dreaded spreadsheet.
+
+- Ensures all tags and categories are properly formatted and unique. And as a librarian who paid for four cataloguing courses in library school, I am thrilled to finally apply this knowledge.
+
+### Maximum Effort
+
+> Maximum effort.
+
+— Deadpool, just before he dropped from an overpass and through the sunroof of a moving SUV filled with bad guys (*Deadpool*, 2016).
+
+Writing a script that included all the features I wanted turned out to be way more work than I expected. Maximum effort. It is surprisingly difficult to maintain the correct YAML structure after altering it. As with all my personal code, I was motivated to create this script because I am lazy. I wanted to automate the process of creating the YAML and offload the tedious organizational work to R.
+
+Currently, the script is only in the first draft stage—it roughly contains the features I want, but it's clunky and overly complicated. One of my data science instructors once remarked, "Laura, your code always works but it's definitely not elegant." Although his criticism stung, it was valid, so I'm striving to turn my pedestrian code into something more refined.
+
+### Why Do I Care So Much About Categories And Tags?
+
+Categories and tags are important enough to warrant this kind of code writing effort. Although my site is shiny and new, there are already 30 categories and 34 tags to keep track of! My tiny ADHD brain can't handle this work on its own. As a data librarian, I understand the importance of a solid organizational framework, and as someone who is a lazy coder, I value putting effort into automating tedious tasks. Let me briefly explain how categories and tags are utilized on my website.
+
+Categories and tags help structure my website and enhance the user experience by making it easier to find relevant content.
+
+- Categories: Think of categories as broad topics or main sections of my website. Each piece of content fits into one category. For example, on my site, categories include "Blog post," "R tutorial," "Workshop," and "Presentation."
+
+- Tags: Tags are more specific keywords that describe details of my content. They are like labels that can be applied to multiple pieces of content across different categories. For example, a blog post in the "R tutorial" category might have tags like "R code," "Lazy coding," or "Package handling."
+
+How they are used:
+
+- In my Markdown files, categories and tags are specified in the YAML front matter.
+
+- Here’s how the YAML front matter looks for this blog post:
+
+*code window goes here*
+
+The R package, blogdown, uses Hugo, a static site generator written in Go, to take these categories and tags and organize my content, making it easier for visitors to navigate my site and find related posts.
+With these functionalities in mind, here are my goals for the second draft:
+
+Next Two Steps for Improvement:
+
+1. Refactor and Simplify:
+
+- What Refactor Means: Refactoring means to restructure existing code without changing its external behaviour to make it easier to understand and maintain.
+
+- Combine Related Functions: Look for places where I can combine similar functions to make the code cleaner. For example, if reading and writing the YAML front matter share many steps, merge them into a single function.
+
+- Streamline Logic: I'll take a good look at each function and see if there are any redundant or overly complicated steps that can be simplified. This will make my code more efficient and easier to follow.
+Add Error Handling:
+
+2. Critical Area for Error Handling: 
+
+- Pay special attention to the function that reads the YAML front matter (read_yaml_front_matter), which is step 2. This step needs solid error handling to deal with cases where the file doesn't exist, the YAML delimiters are missing, or the YAML content is messed up. Making sure this function is rock-solid will prevent errors from spreading through the rest of my script.
+
+- Input Validation: I'll make sure the input parameters, like selected_categories and selected_tags, are properly checked before processing. This will help prevent unexpected issues and make my script more reliable.
 
 ### Subscribe To New Blog Posts
+
 If you would like to be notified when I sporadically publish a new blog post then please subscribe using [this tiny form](https://dashboard.mailerlite.com/forms/1012938/126123917064537119/share). 
