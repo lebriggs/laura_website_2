@@ -47,9 +47,13 @@ Therefore, I required an R script that contains these features:
 
 I'm probably spending more time creating this script than it would take to fill out the templates manually, but as Deadpool says before embarking on a reckless adventure:
 
+---
+
 > **Maximum effort.**
 
 — Deadpool, just before he dropped from a highway overpass and through the sunroof of a moving SUV filled with bad guys (*Deadpool*, 2016).
+
+---
 
 Writing an R script that included all of the features I wanted turned out to be a lot more work than I expected. Truly, maximum effort. It is surprisingly difficult to maintain the correct YAML structure after having R alter it. As with all of my personal code, I was motivated to create this script because I am inherently lazy and don't like remembering details. I wanted to automate the process of creating the YAML and offload the tedious organizational work to R.
 
@@ -106,7 +110,7 @@ tags:
 
 Now that you understand why I embarked on this coding adventure to automate the YAML templates, let me share my next steps for refining the second draft of the R script.
 
-1. **Refactor and Simplify**
+**1. Refactor and Simplify**
 
 - **What Refactor Means:**
 Refactoring is all about cleaning up the code without changing how it functions. This makes it easier for people who aren't me to understand and maintain the code.
@@ -117,7 +121,7 @@ I'll look for places where I can combine similar functions to make the code clea
 - **Streamline Logic:** 
 I'll examine each function and see if there are any redundant or overly complicated steps that can be simplified. This will make my code more efficient and easier to follow.
 
-2. **Add Error Handling** 
+**2. Add Error Handling** 
 
 - **Critical Areas for Error Handling:**
 I need to pay special attention to the function that reads the YAML front matter (**read_yaml_front_matter**), which is step 2 in the script. This function needs solid error handling to deal with cases where the Markdown file doesn't exist, the YAML delimiters are missing, or the YAML content is messed up. Making sure this function is rock-solid will prevent errors from cascading through the rest of my script.
