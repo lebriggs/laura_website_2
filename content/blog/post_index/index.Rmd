@@ -76,7 +76,7 @@ Here’s an example of the "Website Design" category and its current tags.
 
 **Example 1:**<br>
 
-**Website Design**
+**Website Design**<br>
 Tags:
 - Alternative text
 - Categories and tags
@@ -90,9 +90,9 @@ Next, let's explore where you can find the categories and tags on my website.
 
 At the very bottom of each content page, you will find **🞂 Details**. Clicking on the arrow head (**🞂**) will list the Categories, Tags, and also suggest related pages to read on my site (**See Also**). While my current site set-up with Hugo Apéro doesn't display tags as visibly in the same way as categories, they still play a crucial role in organizing and linking content internally.
 
-| ![Side profile of a sable German Shepherd Dog standing in a field of tall grass](bosco.jpg "Bosco, a sable German Shepherd Dog") |
+| ![Post details section showing the date posted, length, categories, tags, and related posts](details.jpg "Post Details - 30 July 2024") |
 |:--:|
-| **Figure 1:** Bosco, the German Shepherd Dog. |
+| **Figure 1:** Post details for the current blog post. |
 
 Now, let's look at an example of how categories and tags function for the blog post you are reading. The categories and tags are specified in the YAML front matter.
 
