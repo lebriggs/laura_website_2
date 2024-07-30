@@ -88,7 +88,7 @@ You’ll notice that "Markdown" is categorized under "Website Design" rather tha
 
 Next, let's explore where you can find the categories and tags on my website.
 
-At the very bottom of each content page, you will find **🞂 Details**. Clicking on the arrow head (**🞂**) will list the Categories, Tags, and also suggest related pages to read on my site (**See Also**). While my current site set-up with Hugo Apéro doesn't display tags as visibly in the same way as categories, they still play a crucial role in organizing and linking content internally.
+At the very bottom of each content page, you will find **&#x1F782; Details**. Clicking on the right pointing triangle symbol (**&#x1F782;**) will list the Categories, Tags, and also suggest related pages to read (**See Also**). While my current site set-up with Hugo Apéro doesn't display tags as visibly in the same way as categories, they still play a crucial role in organizing and linking content internally.
 
 | ![Post details section showing the date posted, length, categories, tags, and related posts](details_75.jpg "Post Details") |
 |:--:|
