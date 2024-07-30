@@ -15,8 +15,9 @@ draft: false
 layout: single
 categories:
 - "Presentation"
-- "Research ethics"
-- "Transferable skills acquisition"
+- "Academic and Research Ethics"
+- "Transferable Skills Acquisition"
+- "Data Visualization"
 tags:
 - "post_id: 005"
 - "Diagram"

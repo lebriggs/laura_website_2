@@ -14,8 +14,9 @@ links:
 layout: single
 Categories:
 - "Project"
-- "R tutorial"
-- "Data analysis"
+- "R Code"
+- "Data Analysis"
+- "Data Visualization"
 - "Tools"
 Tags:
 - "post_id: 010"
@@ -24,7 +25,7 @@ Tags:
 - "Shiny"
 - "ORCID API"
 - "Data cleaning"
-- "Data visualization"
+- "R tutorial"
 ---
 
 ## Just getting the project's framework set-up. 

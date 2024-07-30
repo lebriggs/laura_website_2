@@ -15,9 +15,11 @@ draft: false
 layout: single
 categories:
 - "Presentation"
-- "Large language model"
-- "Instructional design"
-- "Transferable skills acquisition"
+- "Large Language Model"
+- "Instructional Design"
+- "Transferable Skills Acquisition"
+- "Data Visualization"
+- "Tools"
 tags:
 - "post_id: 009"
 - "Diagram"
@@ -25,6 +27,8 @@ tags:
 - "ChatGPT"
 - "Prompt design"
 - "AI literacy"
+- "Problem solving"
+- "Critical thinking"
 links:
 - icon: slideshare
   icon_pack: fab
@@ -36,5 +40,4 @@ links:
   url: https://t.ly/2Jjub
 ---
 
-* I'm confident that my 2024 peaked right after I narrated the development of the mind map. You know how much I love diagrams but this one has a lot going on - even for me.
-* The course I created while at UVic Libraries is live (but it could have been changed from my original creation).
+* I'm confident that my year peaked directly after I narrated the mind map I used to create the prompt design course. You know how much I love diagrams but this one has a lot going on - even for me.

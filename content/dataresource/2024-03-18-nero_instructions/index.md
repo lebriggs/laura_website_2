@@ -11,15 +11,19 @@ draft: false
 layout: single
 images:
 categories:
-- "Data analysis"
-- "GSD data"
-- "R tutorial"
-- "Workshop"
 - "Presentation"
+- "Data Analysis"
+- "Data Visualization"
+- "German Shepherd Dog (GSD) Data"
+- "R Code"
 tags:
 - "post_id: 004"
 - "Data cleaning"
-- "GSD health data"
+- "R tutorial"
+- "German Shepherd Dog (GSD) health data"
+- "Nero vom Buchonia offspring"
+- "Workshop"
+- "Diagram"
 ---
 
 ### A Data Pre-Analysis Plan Using Canva: Workshop Description

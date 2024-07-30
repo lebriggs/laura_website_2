@@ -17,8 +17,9 @@ draft: false
 layout: single
 Categories:
 - "Presentation"
-- "Research ethics"
-- "Data analysis"
+- "Academic and Research Ethics"
+- "Data Analysis"
+- "Data Visualization"
 Tags:
 - "post_id: 006"
 - "Diagram"

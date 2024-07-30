@@ -15,22 +15,23 @@ draft: false
 layout: single
 series: 
 categories:
-- "Data analysis"
-- "GSD data"
-- "R tutorial"
-- "Workshop"
-- "Transferable skills acquisition"
-- "Tools"
 - "Presentation"
+- "Data Analysis"
+- "German Shepherd Dog (GSD) Data"
+- "R Code"
+- "Instructional Design"
+- "Data Visualization"
+- "Tools"
 tags:
 - "post_id: 007"
 - "Data cleaning"
-- "GSD health data"
+- "German Shepherd Dog (GSD) health data"
+- "Nero vom Buchonia offspring"
 - "Web scraping"
 - "Diagram"
 - "Canva"
 - "Active learning"
-- "Data visualization"
+- "Workshop"
 links:
 - icon: slideshare
   icon_pack: fab

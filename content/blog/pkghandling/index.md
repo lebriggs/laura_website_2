@@ -14,18 +14,17 @@ links:
   name: GIST
   url: "https://gist.github.com/lebriggs/736ff4f9afd5e133b6aaa4b76cabd53f"
 categories:
-- "Blog post"
-- "R tutorial"
+- "Blog"
+- "R Code"
 - "Tools"
 tags:
 - "post_id: 002"
-- "R code"
+- "R tutorial"
 - "Package handling"
 - "Error handling"
-- "Automating workflow in R"
+- "Automation"
 - "Lazy coding"
 - "GitHub Gist"
-- "Workflow process"
 ---
 
 ### What's The Point Of This R Script?

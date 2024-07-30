@@ -9,13 +9,13 @@ excerpt: |
   Welcome to my new website that's still under construction. Even though it's 2024, the site is built using R, blogdown, and Hugo Apéro. Let me explain why this is totally on brand for me.
 layout: single
 categories:
-- "Blog post"
-- "R tutorial"
-- "Website design"
+- "Blog"
+- "R Code"
+- "Website Design"
 - "Tools"
 tags:
 - "post_id: 001"
-- "R code"
+- "R tutorial"
 - "Markdown"
 - "Images in Markdown"
 - "Alternative text"

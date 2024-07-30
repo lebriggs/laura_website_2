@@ -15,11 +15,12 @@ draft: false
 layout: single
 categories:
 - "Presentation"
-- "Large language model"
-- "Transferable skills acquisition"
-- "R tutorial"
-- "Data analysis"
-- "GSD data"
+- "Large Language Model"
+- "Transferable Skills Acquisition"
+- "R Code"
+- "Data Analysis"
+- "German Shepherd Dog (GSD) Data"
+- "Tools"
 tags:
 - "post_id: 008"
 - "Diagram"
@@ -28,8 +29,11 @@ tags:
 - "Information literacy"
 - "Critical thinking"
 - "Data cleaning"
-- "GSD health data"
 - "AI literacy"
+- "German Shepherd Dog (GSD) health data"
+- "Nero vom Buchonia offspring"
+- "R tutorial"
+
 links:
 - icon: slideshare
   icon_pack: fab
