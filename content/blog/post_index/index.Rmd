@@ -156,7 +156,7 @@ I need to pay special attention to the function that reads the YAML front matter
 - **Input Validation:**<br>
 I'll make sure the Laura-inputted parameters, such as tags and categories, are verified before processing. This will help prevent "unexpected" issues, such as spelling "Diagram" incorrectly for the fifth time, and hence make my script more robust.
 
-###Stay Tuned###
+### Stay Tuned
 
 You're still here? Congratulations on making it to the end of this really long post! No wonder no one actually wants to document the development of their code.
 
