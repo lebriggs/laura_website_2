@@ -160,9 +160,9 @@ I'll make sure the Laura-inputted parameters, such as tags and categories, are v
 
 You're still here? Congratulations on making it to the end of this really long post! No wonder no one actually wants to document the development of their code.
 
-While I haven’t delved into the details of the code in this discussion, those specifics are coming in a future blog post(s). I’ll cover how the script works, explain my coding decisions, and share detailed examples of the script in action. For now, my script is already helping me manage categories and tags without relying on a dreaded spreadsheet.
+While I haven’t delved into the details of the code in this discussion, those specifics are coming in a future blog post about the second draft of the script. In that post, I'll discuss how the code was refined, the addition of solid error handling, and share detailed examples of how the script works in practice. For now, my script is already making it much easier to manage categories and tags without relying on a dreaded spreadsheet.
 
-Next, I'll refine the code and add solid error handling. If you have any suggestions or questions, please feel free to send me [a message](/contact). I love hearing from readers!
+If you have any suggestions or questions, please feel free to send me [a message](/contact). I love hearing from readers!
 
 Thank you for joining me on my coding adventures. 
 
