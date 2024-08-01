@@ -3,10 +3,10 @@ title: "Too Tired To Type"
 subtitle: "YAML Metadata Updater For Content Files"
 author: Laura Briggs
 show_author_byline: true
-date: "2024-07-30"
+date: "2024-08-01"
 draft: false
 excerpt: |
-  This script automates indexing your Markdown files with tags, categories, the post ID number, and the current date. Perfect for those of us who are too tired to update YAML metadata manually, it handles the tedious work for managing blog posts and other content files!
+  This is a first draft of a script to automate indexing your Markdown files with tags, categories, the post ID number, and the current date. Perfect for those of us who are too tired to manually update YAML metadata for our websites, it handles the tedious work for managing blog posts and other content files!
 layout: single
 links:
 - icon: github-square
@@ -28,19 +28,17 @@ tags:
 
 ### What Problem Am I Trying To Solve?
 
-Managing a website can be a tedious task, especially when it involves manually updating metadata for each content page. Every content page (blog post, presentation page, project page, etc.) on my website is created from a Markdown file that requires me to manually update a YAML template. YAML (YAML Ain't Markup Language), located at the top of each Markdown file, is used to format essential information about the content. For the librarians reading this, the YAML contains the metadata information for this blog post.
+Managing a website can feel tedious, especially when it involves manually updating metadata for each content page, such as blog posts, presentation pages, or project pages. For my website, these pages are created from Markdown files that require manual updates to a YAML template. YAML (YAML Ain't Markup Language), located at the top of each Markdown file, contains essential metadata for the content. This is just the initial post about my script, so I won't dive into the code specifics yet— think of this as the fun prequel where I set the stage and define the problem. Stay tuned for future updates as I develop the code!
 
-I felt R should be filling out the YAML templates instead of me. Put the robot to work!
+I felt R should be filling out the YAML templates instead of me. Put the robot to work! Therefore, I wanted an R script that contains these features: 
 
-Therefore, I required an R script that contains these features:
-
-- Adds or modifies Laura-specified tags and categories, so I don't have to remember them. As a librarian who paid for four cataloguing courses in library school, I am thrilled to finally apply my indexing knowledge.
+- Adds or modifies Laura-specified tags and categories, so I don't have to remember them. As a librarian who paid for four cataloguing courses in library school, I'm ecstatic to finally apply my indexing knowledge.
 
 - Ensures the date field is set to today's date if it's empty, because I don’t want to be forced to consult a calendar.
 
 - Increments the highest post ID number, because I definitely don't want to track this information manually.
 
-- Collects previous tags and categories from all Markdown files in several specified directories of my website. Everything is kept organized without requiring me to maintain a dreaded spreadsheet.
+- Collects previous tags and categories from all Markdown files in several specified directories of my website. This way, everything stays organized without requiring me to maintain a dreaded spreadsheet.
 
 - Ensures all tags and categories are properly formatted and unique. 
 
@@ -56,9 +54,9 @@ I'm probably spending more time creating this script than it would take to fill 
 
 ---
 
-Writing an R script that included all of the features I wanted turned out to be a lot more work than I expected. Truly, maximum effort. It is surprisingly difficult to maintain the correct YAML structure after having R alter it. As with all of my personal code, I was motivated to create this script because I am inherently lazy and don't like remembering details. I wanted to automate the process of creating the YAML and offload the tedious organizational work to R.
+Writing an R script that includes all the features I wanted turned out to be a lot more work than I expected. Truly, maximum effort. Maintaining the correct YAML structure after having R alter it is surprisingly difficult. As with all of my personal code, I was motivated to create this script because I am inherently lazy and don't like remembering details. I wanted to automate the process of creating the YAML and offload the tedious organizational work to R.
 
-Currently, the script is only in the first draft stage—it roughly contains the features I want, but it's clunky and overly complicated. One of my data science instructors once remarked to the entire class, "Laura, your code always works but it's definitely not elegant." Although his criticism stung a bit, it was totally valid, so I'm striving to turn my inherently pedestrian code into something more refined.
+Currently, the script is only in the first draft stage— it roughly contains the features I want, but it's clunky and overly complicated. A previous data science instructors remarked to the entire class, "Laura, your code always works but it's definitely not elegant!". Although his criticism stung a bit, it was totally valid. I'm striving in the second draft to turn my inherently pedestrian code into something more refined.
 
 ### Why Do I Care So Much About Categories And Tags?
 
