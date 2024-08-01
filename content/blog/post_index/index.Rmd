@@ -28,9 +28,9 @@ tags:
 
 ### What Problem Am I Trying To Solve?
 
-Managing a website can feel tedious, especially when it involves manually updating metadata for each content page, such as blog posts, presentation pages, or project pages. For my website, these pages are created from Markdown files that require manual updates to a YAML template. YAML (YAML Ain't Markup Language), located at the top of each Markdown file, contains essential metadata for the content. This is just the initial post about my script, so I won't dive into the code specifics yet— think of this as the fun prequel where I set the stage and define the problem. Stay tuned for future updates as I develop the code!
+Managing a website can feel tedious, especially when it involves manually updating metadata for each content page, such as blog posts, presentation pages, or project pages. For my website, these pages are created from Markdown files that require manual updates to a YAML template. YAML (YAML Ain't Markup Language), located at the top of each Markdown file, contains essential metadata for organizing and displaying the content correctly. This discussion represents the initial blog post about my script, so I won't dive into the code specifics yet— think of this as the fun prequel where I set the stage and define the problem. Stay tuned for future updates as I develop the code!
 
-I felt R should be filling out the YAML templates instead of me. Put the robot to work! Therefore, I wanted an R script that contains these features: 
+I strongly felt that R should be filling out the YAML templates instead of me. Let's put the robot to work! Therefore, I wanted an R script that contained these features: 
 
 - Adds or modifies Laura-specified tags and categories, so I don't have to remember them. As a librarian who paid for four cataloguing courses in library school, I'm ecstatic to finally apply my indexing knowledge.
 
@@ -54,23 +54,25 @@ I'm probably spending more time creating this script than it would take to fill 
 
 ---
 
-Writing an R script that includes all the features I wanted turned out to be a lot more work than I expected. Truly, maximum effort. Maintaining the correct YAML structure after having R alter it is surprisingly difficult. As with all of my personal code, I was motivated to create this script because I am inherently lazy and don't like remembering details. I wanted to automate the process of creating the YAML and offload the tedious organizational work to R.
+Writing an R script that included all the features I wanted turned out to be a lot more work than I anticipated. Truly, maximum effort. Maintaining the correct YAML structure after having R alter it was surprisingly difficult. As with all of my personal code, I was motivated to create this script because I am inherently lazy and don't like remembering details. I wanted to automate the process of creating the YAML and offload the tedious organizational work to R.
 
-Currently, the script is only in the first draft stage— it roughly contains the features I want, but it's clunky and overly complicated. A previous data science instructors remarked to the entire class, "Laura, your code always works but it's definitely not elegant!". Although his criticism stung a bit, it was totally valid. I'm striving in the second draft to turn my inherently pedestrian code into something more refined.
+Currently, the script is only in the first draft stage— it roughly contains the features I want, but it's clunky and overly complicated. A previous data science instructor once remarked to the entire class, "Laura, your code always works but it's definitely not elegant!". Although his criticism stung a bit, it was totally valid. I'm striving in the second draft to turn my inherently pedestrian code into something more refined.You can access the first draft of the script by clicking on the GitHub Gist (**GIST**) button which is located just below the date at the top of the page.
 
 ### Why Do I Care So Much About Categories And Tags?
 
-As a data librarian, I understand the importance of a solid organizational framework and robust documentation. That’s why I’m all about automating the tedious tasks, like tracking metadata (hello, categories and tags!), to keep things consistent and efficient. Indeed, the impetus for writing the R script originated because I spelled the tag "Diagram" incorrectly four times. As I sat there fuming while waiting for the website to deploy after the third time I spelled "Diagram" incorrectly, I started jotting down notes about how I could automate the process of adding tags to my presentation page. By the fourth time, I was committed to writing the script. Categories and tags are essential for enhancing the user experience and making content easily discoverable. Even though my website is shiny and new, it already has 13 categories and 36 tags to keep track of. My tiny ADHD brain can't handle this work on its own, which is why I prioritize automating these tedious tasks. The final draft of the R script will ensure that such embarrassing spelling errors are relegated to the past. Let me explain in a bit more detail how categories and tags are utilized on my website.
+As a data science librarian, I understand the importance of a solid organizational framework and robust documentation. That’s why I’m all about automating the tedious tasks, such as tracking metadata (hello, categories and tags!), to keep things consistent and efficient. Indeed, the impetus for writing the R script originated because I spelled the tag "Diagram" incorrectly four times. As I sat there fuming while waiting for the website to deploy after the third time I spelled "Diagram" incorrectly, I started jotting down notes about how I could automate the process of adding tags to my presentation page. By the fourth time, I was committed to writing the script. Categories and tags are essential for enhancing the user experience and making content easily discoverable. Even though my website is shiny and new, it already has 13 categories and 34 tags to keep track of. My tiny ADHD brain can't handle this work on its own, which is why I prioritize automating these tedious tasks. The final draft of the R script will ensure that such embarrassing spelling errors are relegated to the past. 
 
-Categories and tags help structure my website and enhance the user experience by making it easier to find related content. They also streamline content management by providing a clear organizational structure, making it simpler to categorize and locate posts. To achieve this, I’ve chosen to apply categories and tags in a consistent manner that works with how I think about my content, ensuring clarity and consistency in the organizational structure. Let me explain how categories and tags work in a bit more detail.
+Let me explain in a bit more detail how categories and tags are utilized on my website.
+
+Categories and tags help structure my website and enhance the user experience by making it easier to find related content. They also streamline content management by providing a clear organizational structure, making it simpler to categorize and locate posts. To achieve this, I’ve chosen to apply categories and tags in a consistent manner that works with how I think about my content, ensuring clarity and consistency in the organizational structure. 
 
 - **Categories:**<br>
 Think of categories as broad topics or the main sections of my website. Each piece of content can fit into one or more categories, representing its primary focus areas. For example, on my site, categories can include "Presentation", "Website Design", and "Transferable Skills Acquisition". These are just examples, and there are other categories that content can be assigned to based on its main themes. Generally, you should have fewer categories than tags to keep the broad topics manageable. By navigating through categories, readers can easily explore related content and discover new areas of interest.
 
 - **Tags:**<br>
-Tags are more specific keywords that describe details of my content. They serve as labels that can be applied to multiple pieces of content, but each tag belongs to only one category. For example, a blog post in the "Website Design" category might have tags like "Categories and tags," "Hugo Apéro," or "Markdown." Tags help users find content that shares specific characteristics or topics within that single category, ensuring that related content is easily discoverable.
+Tags are more specific keywords that describe details of my content. They serve as labels that can be applied to multiple pieces of content, but each tag belongs to only one category. For example, a blog post in the "Website Design" category might have tags such as "Categories and tags," "Hugo Apéro," or "Markdown." Tags help users find content that shares specific characteristics or topics within that single category, ensuring that related content is easily discoverable.
 
-Here’s an example of the "Website Design" category and its current tags.
+Here’s an example of the "Website Design" category and its current tags; the number of tags in this category will likely grow as new content is added to the site.
 
 **Example 1:**<br>
 
@@ -86,13 +88,15 @@ You’ll notice that "Markdown" is categorized under "Website Design" rather tha
 
 Next, let's explore where you can find the categories and tags on my website.
 
-At the very bottom of each content page, you will find **<span style="font-size: 1.2em; vertical-align: middle;">&#x25BA;</span> Details**. Clicking on the right-pointing triangle symbol (**<span style="font-size: 1.2em; vertical-align: middle;">&#x25BA;</span>**) will display the Categories and Tags for the page, as well as suggest related pages to read (see **Figure 1**). While my current site setup with Hugo Apéro displays the Categories directly under the page's title, tags aren't as visibly prominent. However, tags still play a crucial role in organizing and linking content internally.
+Categories are displayed directly under the page's title on my current site setup with Hugo Apéro, but tags aren't as visibly prominent. However, tags still play a crucial role in organizing and linking content internally. At the very bottom of each content page, you will find **<span style="font-size: 1.2em; vertical-align: middle;">&#x25BA;</span> Details**. Clicking on the right-pointing triangle symbol (**<span style="font-size: 1.2em; vertical-align: middle;">&#x25BA;</span>**) will display the categories and tags for the page and also suggest related content explore (see **Figure 1**). 
 
 | ![Post details section showing the date posted, length, categories, tags, and related posts](details_75.jpg "Post Details") |
 |:--:|
 | **Figure 1:** Post details for the current blog post. |
 
 Now, let's look at an example of how categories and tags function for the blog post you are reading. The categories and tags are specified in the YAML front matter.
+
+Now, let's examine the YAML front matter for this blog post to see how categories and tags are specified (**Example 2**).
 
 **Example 2:**<br>
 
@@ -132,25 +136,35 @@ tags:
 
 ### Next Two Steps For The Script's Improvement
 
-Now that you understand why I embarked on this coding adventure to automate the YAML templates, let me share my next steps for refining the second draft of the R script.
+Let's recap! I covered what features I wanted the R script to include, the importance of categories and tags, and the motivation behind automating the completion of the YAML templates. Now that you understand why I embarked on this coding adventure, let's outline the next two steps for refining the second draft of the code.
 
 **1. Refactor and Simplify**
 
-**Refactoring** (or restructuring) is all about cleaning up the code without changing how it functions. This process makes the code more organized and readable, making it easier for people who aren't me to understand and maintain it.
+**Refactoring** (or restructuring) involves cleaning up the code without changing how it functions. This process makes the code more organized and readable, which helps others understand and maintain it more easily.
 
 - **Combine Related Functions:**<br>
 I'll look for places where I can combine similar functions to make the code cleaner. For example, if reading and writing the YAML front matter share many steps, I’ll merge them into a single function.
 
 - **Streamline Logic:**<br>
-I'll examine each function and see if there are any redundant or overly complicated steps that can be simplified. This will make my code more efficient and easier to follow.
+I'll examine each function to see if there are any redundant or overly complicated steps that can be simplified. This will make my code more efficient and easier to follow.
 
 **2. Add Error Handling** 
 
 - **Critical Areas For Error Handling:**<br>
-I need to pay special attention to the function that reads the YAML front matter (**read_yaml_front_matter**), which is step 2 in the script. This function needs solid error handling to deal with cases where the Markdown file doesn't exist, the YAML delimiters are missing, or the YAML content is messed up. Making sure this function is rock-solid will prevent errors from cascading through the rest of my script.
+I need to pay special attention to the function that reads the YAML front matter (**read_yaml_front_matter**), which is step 2 in the script. This function needs solid error handling to deal with cases where the Markdown file doesn't exist, the YAML delimiters are missing, or the YAML content is messed up. Making sure this function is rock-solid will prevent errors from cascading through the rest of the script.
 
 - **Input Validation:**<br>
-I'll make sure the input parameters, like tags and categories such as "Information literacy" and "Transferable skills acquisition," are verified before processing. This will help prevent "unexpected" issues, like spelling "Diagram" incorrectly for the fifth time, and make my script more robust.
+I'll make sure the Laura-inputted parameters, such as tags and categories, are verified before processing. This will help prevent "unexpected" issues, such as spelling "Diagram" incorrectly for the fifth time, and hence make my script more robust.
+
+###Stay Tuned###
+
+You're still here? Congratulations on making it to the end of this really long post! No wonder no one actually wants to document the development of their code.
+
+While I haven’t delved into the details of the code in this discussion, those specifics are coming in a future blog post(s). I’ll cover how the script works, explain my coding decisions, and share detailed examples of the script in action. For now, my script is already helping me manage categories and tags without relying on a dreaded spreadsheet.
+
+Next, I'll refine the code and add solid error handling. If you have any suggestions or questions, please feel free to send me [a message](/contact). I love hearing from readers!
+
+Thank you for joining me on my coding adventures. 
 
 ### Subscribe To New Blog Posts
 
