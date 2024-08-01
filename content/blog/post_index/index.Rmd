@@ -3,7 +3,7 @@ title: "Too Tired To Type"
 subtitle: "YAML Metadata Updater For Content Files"
 author: Laura Briggs
 show_author_byline: true
-date: "2024-08-01"
+date: "2024-07-30"
 draft: false
 excerpt: |
   This is a first draft of a script to automate indexing your Markdown files with tags, categories, the post ID number, and the current date. Perfect for those of us who are too tired to manually update YAML metadata for our websites, it handles the tedious work for managing blog posts and other content files!
