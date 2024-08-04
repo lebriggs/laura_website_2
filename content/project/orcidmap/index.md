@@ -12,13 +12,13 @@ links:
   name: code
   url: ""
 layout: single
-Categories:
+categories:
 - "Project"
 - "R Code"
 - "Data Analysis"
 - "Data Visualization"
 - "Tools"
-Tags:
+tags:
 - "post_id: 010"
 - "Map"
 - "Leaflet"

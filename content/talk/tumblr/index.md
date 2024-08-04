@@ -15,12 +15,12 @@ location: "Victoria, British Columbia"
 draft: false
 # layout options: single, single-sidebar
 layout: single
-Categories:
+categories:
 - "Presentation"
 - "Academic and Research Ethics"
 - "Data Analysis"
 - "Data Visualization"
-Tags:
+tags:
 - "post_id: 006"
 - "Diagram"
 - "Informed consent"
