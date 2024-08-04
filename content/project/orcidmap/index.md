@@ -28,7 +28,9 @@ tags:
 - "R tutorial"
 ---
 
-## Just getting the project's framework set-up. 
+### Project Overview 
+
+Creating a new version of the visualization developed by a partnership between the ORCID US Community and Drexel University, originally created with R and Tableau, now using R, Leaflet, and Shiny. This interactive map showcases collaborations among university researchers, highlighting connections both within their home institution and internationally.
 
 ### Original Project's Resources
 
@@ -40,4 +42,4 @@ tags:
 
 ### Contact Laura
 
-I love hearing from readers, so you are always welcome to [connect with me](/contact).
+I love hearing from readers, so you're welcome to [connect with me](/contact).

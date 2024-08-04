@@ -31,4 +31,4 @@ This R project automates the updating of YAML metadata in Markdown files for my 
 
 ### Contact Laura
 
-I love hearing from readers, so you are always welcome to [connect with me](/contact).
+I love hearing from readers, so you're welcome to [connect with me](/contact).
