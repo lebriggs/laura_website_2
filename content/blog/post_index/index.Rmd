@@ -57,7 +57,9 @@ I'm probably spending more time creating this script than it would take to fill 
 
 Writing an R script that included all the features I wanted turned out to be a lot more work than I anticipated. Truly, maximum effort. Maintaining the correct YAML structure after having R alter it was surprisingly difficult. As with all of my personal code, I was motivated to create this script because I am inherently lazy and don't like remembering details. I wanted to automate the process of creating the YAML and offload the tedious organizational work to R.
 
-Currently, the script is only in the first draft stage— it roughly contains the features I want, but it's clunky and overly complicated. A previous data science instructor once remarked to the entire class, "Laura, your code always works but it's definitely not elegant!". Although his criticism stung a bit, it was totally valid. I'm striving in the second draft to turn my inherently pedestrian code into something more refined.You can access the first draft of the script by clicking on the GitHub Gist (**GIST**) button which is located just below the date at the top of the page.
+Currently, the script is only in the first draft stage— it roughly contains the features I want, but it's clunky and overly complicated. A previous data science instructor once remarked to the entire class, "Laura, your code always works but it's definitely not elegant!". Although his criticism stung a bit, it was totally valid. I'm striving in the second draft to turn my inherently pedestrian code into something more refined. 
+
+You can access the first draft of the script by clicking on the GitHub Gist (**GIST**) button which is located just below the date at the top of the page.
 
 ### Why Do I Care So Much About Categories And Tags?
 
