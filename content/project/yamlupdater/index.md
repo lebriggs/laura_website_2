@@ -7,7 +7,7 @@ draft: false
 excerpt: |
   This R project automates the updating of YAML metadata in Markdown files for my website, ensuring proper indexing with tags, categories, post ID numbers, and current dates. By handling these repetitive tasks, the script streamlines the management of blog posts, presentations, projects, and data resources, allowing for a more efficient and organized workflow.
 links:
-- icon: newspaper-o
+- icon: newspaper
   icon_pack: fa
   name: BLOG POST 1
   url: "/blog/post_index/"
