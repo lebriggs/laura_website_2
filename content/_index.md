@@ -4,9 +4,9 @@ action_link: /about
 action_type: text #text, button
 description: |
   I first started out in organometallic chemistry because, let’s face it, liquid nitrogen is endlessly cool at any age. 
-  After earning my MSc in chemistry, during which I permanently lost the ability to smell skunk odour, I attended library school to obtain my MLIS degree. 
+  After earning my MSc. in chemistry, during which I permanently lost the ability to smell skunk odour, I attended library school to obtain my MLIS degree. 
   I then spent several years at various Canadian universities as a science and engineering librarian. 
-  Later, I transitioned to the patent industry, where I developed big feelings about orphan drugs. 
+  Later, I transitioned to a role as an information consultant, where I developed big feelings about the orphan drug industry.
   During the COVID-19 pandemic, I returned to school to study data science because I eventually grew weary of singing sea shanty versions of Nickelback songs while in quarantine. 
   My fascination with data science stems from the joy of vigorously shaking a dataset and watching the story fall out. 
   I'm also actively involved in the workingline German Shepherd Dog (GSD) community, with a lifelong interest in the breed's health data. 
