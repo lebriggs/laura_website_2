@@ -4,7 +4,7 @@ action_link: /about
 action_type: text #text, button
 description: |
   Hello! I'm Laura. 
-  <br>
+  <br><br>
   Within this website, you’ll discover my writings about some fun personal projects I’ve worked on. 
   You’ll also find links to recent presentations I’ve given along with their accompanying materials such as slides, R scripts, and especially, diagrams.
   Having a background in chemistry means I am naturally inclined to communicate my ideas through a visual representation. 
