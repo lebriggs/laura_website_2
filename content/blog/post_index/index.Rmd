@@ -12,7 +12,7 @@ links:
 - icon: github-square
   icon_pack: fab
   name: GIST
-  url: "https://gist.github.com/lebriggs/9a183325ac5f7784235d7b5fd37c1936"
+  url: "https://gist.github.com/lebriggs/987688cc544c2b8d54befd995c51304a"
 categories:
 - "Blog"
 - "Project"
