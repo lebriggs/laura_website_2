@@ -1,6 +1,6 @@
 ---
 title: "Too Tired To Type"
-subtitle: "YAML Metadata Updater For Content Files"
+subtitle: "Automated YAML Front Matter Updater For Markdown Files In R."
 author: Laura Briggs
 show_author_byline: true
 date: "2024-07-30"
@@ -12,9 +12,10 @@ links:
 - icon: github-square
   icon_pack: fab
   name: GIST
-  url: "https://gist.github.com/lebriggs"
+  url: "https://gist.github.com/lebriggs/9a183325ac5f7784235d7b5fd37c1936"
 categories:
 - "Blog"
+- "Project"
 - "R Code"
 - "Website Design"
 tags:
@@ -93,8 +94,6 @@ Categories are displayed directly under the page's title on my current site setu
 | ![Post details section showing the date posted, length, categories, tags, and related posts](details_75.jpg "Post Details") |
 |:--:|
 | **Figure 1:** Post details for the current blog post. |
-
-Now, let's look at an example of how categories and tags function for the blog post you are reading. The categories and tags are specified in the YAML front matter.
 
 Now, let's examine the YAML front matter for this blog post to see how categories and tags are specified (**Example 2**).
 
