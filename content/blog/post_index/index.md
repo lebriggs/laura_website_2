@@ -11,7 +11,7 @@ layout: single
 links:
 - icon: github-square
   icon_pack: fab
-  name: GIST
+  name: R SCRIPT
   url: "https://gist.github.com/lebriggs/dc1036e923d321eb3853a924526332d9"
 categories:
 - "Blog"
@@ -61,7 +61,7 @@ Currently, the script is only in the first draft stage— it roughly contains th
 
 ### Show Me The Code
 
-You can access the first draft of the script by clicking on the GitHub Gist (**GIST**) button which is located just below the date at the top of the page.
+You can access the first draft of the script by clicking on the (**R SCRIPT**) button which is located just below the date at the top of the page. The link will take you to a GitHub Gist page.
 
 ### Why Do I Care So Much About Categories And Tags?
 
