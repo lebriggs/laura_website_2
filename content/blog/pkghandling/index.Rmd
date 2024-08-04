@@ -239,7 +239,7 @@ Whew! We've finally arrived at the end of this ridiculously long blog post. I ap
 
 In summary:
 
-- This script automates the tedious process of installing and loading R packages, providing clear feedback, and handling errors gracefully. Try out the code and [let me know](/contact) how it works for you!
+This script automates the tedious process of installing and loading R packages, providing clear feedback, and handling errors gracefully. Try out the code and [let me know](/contact) how it works for you!
 
 ### Subscribe To New Blog Posts
 
