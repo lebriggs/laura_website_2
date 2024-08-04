@@ -25,3 +25,10 @@ tags:
 - "Categories and tags"
 ---
 
+### Project Overview
+
+This R project automates the updating of YAML metadata in Markdown files for my website, ensuring proper indexing with tags, categories, post ID numbers, and current dates. By handling these repetitive tasks, the script streamlines the management of blog posts, presentations, projects, and data resources, allowing for a more efficient and organized workflow.
+
+### Contact Laura
+
+I love hearing from readers, so you are always welcome to [connect with me](/contact).
