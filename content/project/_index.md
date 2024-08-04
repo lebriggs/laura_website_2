@@ -1,6 +1,6 @@
 ---
 author: Laura Briggs
-title: Project Portfolio
+title: Projects
 description: A place for the personal projects that interest me.
 cascade:
   show_author_byline: true
