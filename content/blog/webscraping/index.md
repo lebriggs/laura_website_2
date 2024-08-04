@@ -1,5 +1,5 @@
 ---
-title: "Web Scraping In R."
+title: "Web Scraping In R"
 subtitle: ""
 author: Laura Briggs
 show_author_byline: true
