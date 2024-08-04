@@ -11,7 +11,7 @@ layout: single
 links:
 - icon: github-square
   icon_pack: fab
-  name: GIST
+  name: R SCRIPT
   url: "https://gist.github.com/lebriggs/736ff4f9afd5e133b6aaa4b76cabd53f"
 categories:
 - "Blog"
@@ -203,7 +203,11 @@ Similar to GitHub repositories, Gists have version control, allowing me to track
 - **Embedding:** <br>
 By embedding a Gist, I can display my code in a readable and interactive format directly within my blog post. If I update the Gist file, the revisions are automatically shown in the blog post where I embedded the script. This means that I only need to maintain the code in one place.
 
-Below is the embedded Gist for the package handling script:
+### Show Me The Code
+
+You can access the the script by clicking on the (R SCRIPT) button which is located just below the date at the top of the page. The link will take you to a GitHub Gist page.
+
+Alternatively, here is the embedded Gist for the package handling script:
 
 <script src="https://gist.github.com/lebriggs/736ff4f9afd5e133b6aaa4b76cabd53f.js"></script>
 
