@@ -108,10 +108,10 @@ enableEmoji = true
       icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://github.com/lebriggs"
-  #[[params.social]]
-     # icon      = "bluesky" # icon name without the 'fa-'
+  [[params.social]]
+     # icon      = "github-square"
       #icon_pack = "fab"
-      #url       = "https://bsky.app/"
+      #url       = "https://gist.github.com/lebriggs"
   #[[params.social]]
       #icon      = "instagram" # icon name without the 'fa-'
       #icon_pack = "fab"
