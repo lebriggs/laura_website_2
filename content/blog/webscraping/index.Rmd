@@ -91,11 +91,9 @@ It’s a good idea to run the full web scraping script (starting in Part III) on
    - Three working URLs for actual scraping.
 
 4. **Check the Output:** <br>
-After the script has finished running, check the output CSV file to verify that the data was scraped correctly. 
+After the script has finished running, check the output CSV file to verify that the data was scraped correctly. If you encounter any issues, refer to the error messages or logs provided by the script for troubleshooting.
     - The message **"All available data was saved to 'articles.csv'"** in the Console indicates that the file is ready to be downloaded. 
   
-If you encounter any issues, refer to the error messages or logs provided by the script for troubleshooting.
-
 5. **Customize the Script (Optional):** <br>
 After successfully running the script and reviewing the output, you can customize it to fit your specific needs. If you’re replacing the example URLs with ones from a different website, you’ll likely need to adjust the CSS selectors. This will ensure the script correctly targets the elements you want to scrape for your specific project.
 
