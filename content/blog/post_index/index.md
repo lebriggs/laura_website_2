@@ -61,7 +61,7 @@ Currently, the script is only in the first draft stage— it roughly contains th
 
 ### Show Me The Code
 
-You can access the first draft of the script by clicking on the (**R SCRIPT**) button which is located just below the date at the top of the page. The link will take you to a GitHub Gist page.
+You can access the script by clicking on the **R SCRIPT** button, which is located just below the date at the top of the page. The link will take you to a GitHub Gist page.
 
 ### Why Do I Care So Much About Categories And Tags?
 
