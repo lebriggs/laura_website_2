@@ -32,7 +32,7 @@ tags:
 
 In this post, we'll walk through an R script designed to scrape multiple news articles from a website. This script is beginner-friendly and serves as a great introduction to web scraping. I’ll guide you through how the script works, covering everything from setting it up to ensuring responsible scraping practices. You’ll learn how the script efficiently handles common issues and exports the data into a format that's easy to analyze.
 
-### Note
+### Vital Note
 
 The website used in this script as an example was selected based on a specific request from a reader. The content of this website does not reflect my personal views or endorsements.
 
@@ -64,7 +64,7 @@ List the prerequisites, including any software, packages, and knowledge required
 
 You can access the script by clicking on the **R SCRIPT** button, which is located just below the date at the top of the page. The link will take you to a GitHub Gist page.
 
-### Getting Started with the Script
+### Getting Started With The Script
 
 Guide readers through setting up the script, including installation of dependencies and any initial setup steps.
 
@@ -80,7 +80,7 @@ Provide an explanation of how CSS selectors are used in the script to extract sp
 
 Discuss the built-in error handling in the script, how it manages network issues and missing data, and why it’s important.
 
-### Saving and Analyzing the Data
+### Saving and Analyzing The Data
 
 Describe how the scraped data is saved into a CSV file and suggest ways to analyze or use the data in other tools.
 
