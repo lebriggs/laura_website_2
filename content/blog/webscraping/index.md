@@ -225,7 +225,7 @@ You might wonder why we need the **div** element in this selector when we didn't
 - **Author Name (.td-post-author-name a):** <br> 
 This selector targets the **a** tag within any element that has the class **td-post-author-name**. The class **td-post-author-name** sufficiently narrows down the location of the **a** tag, ensuring accurate selection without needing additional specificity, such as including the **div** element.
 
-- **Article Content (div.td-post-content p):** <br>  
+- **Article Content (div.td-post-content p):** <br>
 For the article content, we need to select all **p** (paragraph) tags within a specific **div** element that has the class **td-post-content**. The **div** acts as a container for the content, and the paragraphs are nested within it. Including the **div** element in the selector ensures that we're targeting paragraphs specifically from the main content area and not inadvertently selecting paragraphs from other parts of the page, such as the header, footer, or sidebar.
 
 ### Error Handling Explained
