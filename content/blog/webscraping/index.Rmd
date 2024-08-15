@@ -105,10 +105,9 @@ In this section, we’ll learn how to use CSS selectors to extract key elements 
 
 A **CSS selector** is a pattern that targets specific HTML elements based on their tags, classes, IDs, or other attributes. We use CSS selectors in the R script because they offer more flexibility than other methods, such as XPath. This flexibility is crucial because CSS selectors can easily adapt to changes in a webpage's structure, making them a reliable choice for scraping multiple pages from a website.
 
-We’ll use the first "real" URL in the script as our example and break down each selector to explain why it works and how it helps us gather the necessary data.
+We’ll use the first "real" article's URL from the script as our example and break down each selector to explain why it works and how it helps us gather the necessary data.
 
 - **Inspect Feature:** <br>
-
 Use your Internet browser's **Inspect** feature to identify the elements you want to scrape and their associated classes or tags. 
 
 To access the Inspect feature:
@@ -123,15 +122,15 @@ This will open the browser's developer tools, where you can explore the HTML str
 |:--:|
 | **Figure 1:** Screenshot of the article's title and its HTML structure in Chrome's Inspect tool. |
 
-#### Example: First URL
+#### Example: Article 1
 
-The following URL will be used to demonstrate how to extract the title, author, date, and content using CSS selectors:
+The following article will be used to demonstrate how to extract the title, author, date, and content using CSS selectors:
 
-https://tnc.news/2024/01/13/rubenstein-indigenous-science/
+Article 1: https://tnc.news/2024/01/13/rubenstein-indigenous-science/
 
 **1. Extracting the Article's Title** <br>
 
-**HTML:**
+**HTML:** <br>
 Highlight the article's title and right-click to select **Inspect** in your browser (e.g., Chrome). This action reveals the corresponding HTML code for the title (see **Figure 1**).
 
 ```{r Title Chunk, echo=TRUE, eval=FALSE}
@@ -230,7 +229,7 @@ You might wonder why we need the **div** element in this selector when we didn't
 - **Author Name (.td-post-author-name a):** <br> 
 This selector targets the **a** tag within any element that has the class **td-post-author-name**. The class **td-post-author-name** sufficiently narrows down the location of the **a** tag, ensuring accurate selection without needing additional specificity, such as including the **div** element.
 
-- **Article Content (div.td-post-content p):**  <br>  
+- **Article Content (div.td-post-content p):** <br>  
 For the article content, we need to select all **p** (paragraph) tags within a specific **div** element that has the class **td-post-content**. The **div** acts as a container for the content, and the paragraphs are nested within it. Including the **div** element in the selector ensures that we're targeting paragraphs specifically from the main content area and not inadvertently selecting paragraphs from other parts of the page, such as the header, footer, or sidebar.
 
 ### Error Handling Explained
