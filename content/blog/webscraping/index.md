@@ -3,7 +3,7 @@ title: "Web Scraping In R"
 subtitle: ""
 author: Laura Briggs
 show_author_byline: true
-date: "2024-08-13"
+date: "2024-08-15"
 draft: false
 excerpt: |
   This R script effortlessly scrapes multiple articles from a website, 
@@ -26,7 +26,8 @@ tags:
 - "Web scraping"
 ---
 
-## The full post is currently being written (*suspense builds*)! Stay tuned.
+## This post is in the process of being written. Stay tuned! 
+### Cue suspenseful music. 
 
 ### Overview
 
@@ -97,15 +98,127 @@ After the script has finished running, check the output CSV file to verify that 
 5. **Customize the Script (Optional):** <br>
 After successfully running the script and reviewing the output, you can customize it to fit your specific needs. If you’re replacing the example URLs with ones from a different website, you’ll likely need to adjust the CSS selectors. This will ensure the script correctly targets the elements you want to scrape for your specific project.
 
-### Understanding CSS Selectors
+### Understanding CSS Selectors For Web Scraping
 
-Provide an explanation of how CSS selectors are used in the script to extract specific elements from the webpages.
+In this section, we’ll learn how to use CSS selectors to extract key elements like the title, author, date, and content from an article on a website.
+
+A **CSS selector** is a pattern that targets specific HTML elements based on their tags, classes, IDs, or other attributes. We use CSS selectors in the R script because they offer more flexibility than other methods, such as XPath. This flexibility is crucial because CSS selectors can easily adapt to changes in a webpage's structure, making them a reliable choice for scraping multiple pages from a website.
+
+We’ll use the first "real" URL in the script as our example and break down each selector to explain why it works and how it helps us gather the necessary data.
+
+- **Inspect Feature:** <br>
+
+Use your Internet browser's **Inspect** feature to identify the elements you want to scrape and their associated classes or tags. 
+
+To access the Inspect feature:
+  
+- **On Windows:** Right-click on any part of the webpage and select **Inspect** (or **Inspect Element**) from the context menu.
+  
+- **On Mac:** Control-click (or two-finger click on a trackpad) on any part of the webpage and select **Inspect** (or **Inspect Element**) from the context menu.
+  
+This will open the browser's developer tools, where you can explore the HTML structure and find the selectors you need. In practice, you might have to experiment with different selectors until you find the ones that work best.
+
+#### Example: First URL
+
+The following URL will be used to demonstrate how to extract the title, author, date, and content using CSS selectors:
+
+https://tnc.news/2024/01/13/rubenstein-indigenous-science/
+
+**1. Extracting the Article's Title** <br>
+
+**HTML:**
+
+
+``` r
+# This is the HTML code that contains the article's title.
+
+<header class="td-post-title">
+    <h1 class="entry-title">OP-ED: Does Indigenous science exist?</h1>
+</header>
+```
+
+**CSS Selector:** <br>
+h1.entry-title
+
+**Explanation:** <br>
+This CSS selector targets the **h1** tag within the header element that has the class **entry-title**. The **h1** tag usually contains the main title of the article. By specifying the **entry-title** class, the selector effectively targets the correct **h1** tag, ensuring that it selects only the main title and avoids any other **h1** tags on the page.
+
+**2. Extracting the Author’s Name** <br>
+
+
+``` r
+# This is the HTML code that contains the author's name.
+
+<div class="td-post-author-name">
+    <div class="td-author-by">By</div>
+    <a href="https://tnc.news/author/hymierubenstein/">Hymie Rubenstein</a>
+    <div class="td-author-line"> - </div>
+</div>
+```
+
+**CSS Selector:** <br>
+.td-post-author-name a
+
+**Explanation:** <br>
+This selector finds the **a** tag within the **div** that has the class **td-post-author-name**. The **a** tag contains the author’s name and the link to their profile.
+
+The selector starts with a period (**.**) because it is targeting a class (**td-post-author-name**). In CSS, a period (**.**) before a name indicates that it’s a class selector, meaning it will select elements with that class. For example, **.td-post-author-name a** targets an anchor (**a**) tag within any element that has the **td-post-author-name** class.
+
+Alternatively, the selector for the article title (**h1.entry-title**) doesn’t start with a period (**.**) because it begins with the **h1** tag itself. This selector first targets the **h1** tag, which is an HTML element, and then filters those **h1** tags down to only those that have the **entry-title** class. By targeting the **a** tag within this **div** class, the selector effectively captures the author’s name. The author’s name is always found in this **a** tag on the site.
+
+**3. Extracting the Article's Publication Date** <br>
+
+**HTML:**
+
+
+``` r
+# This is the HTML code that contains the publication date.
+
+<span class="td-post-date">
+    <time class="entry-date updated td-module-date" datetime="2024-01-13T08:22:15-05:00">January 13, 2024</time>
+</span>
+```
+
+**CSS Selector:** <br? 
+time.entry-date
+
+**Explanation:** <br>
+This selector targets the **time** tag with the class **entry-date**, which contains the publication date of the article. In the HTML snippet, the **time** tag has additional classes, **updated** and **td-module-date**. However, specifying just the **entry-date** class is sufficient because it uniquely identifies the correct **time** tag. This approach keeps the selector flexible and less likely to break if the other classes change; thus, ensuring accurate extraction of the publication date.
+
+**4. Extracting the Article's Content**
+
+**HTML:**
+
+
+``` r
+# This is the HTML code that contains the main content of the article.
+
+<div class="td-post-content tagdiv-type">
+    <p>Though promoted for decades in Canada’s universities...</p>
+    <p>This attack was reinforced Sept. 18 last year...</p>
+    <p>Additional paragraphs...</p>
+</div>
+```
+
+**CSS Selector:** <br>
+div.td-post-content p
+
+**Explanation:** <br>
+This selector finds all **p** tags within the **div** element that has the class **td-post-content**. Each **p** tag represents a paragraph in the article. The selector **div.td-post-content p** is effective because it selects all paragraph tags within the main content area, allowing you to extract the full text of the article.
+
+You might wonder why we need the **div** element in this selector when we didn't need it for **.td-post-author-name a**, which targets the author’s name. The reason lies in the specificity and context of what we’re trying to extract.
+
+- **Author Name (.td-post-author-name a):**  
+This selector targets the **a** tag within any element that has the class **td-post-author-name**. The class **td-post-author-name** sufficiently narrows down the location of the **a** tag, ensuring accurate selection without needing additional specificity, such as including the **div** element.
+
+- **Article Content (div.td-post-content p):**  
+For the article content, we need to select all **p** (paragraph) tags within a specific **div** element that has the class **td-post-content**. The **div** acts as a container for the content, and the paragraphs are nested within it. Including the **div** element in the selector ensures that we're targeting paragraphs specifically from the main content area and not inadvertently selecting paragraphs from other parts of the page, such as the header, footer, or sidebar.
 
 ### Error Handling Explained
 
 Discuss the built-in error handling in the script, how it manages network issues and missing data, and why it’s important.
 
-### Saving and Analyzing The Data
+### Saving And Analyzing The Data
 
 Describe how the scraped data is saved into a CSV file and suggest ways to analyze or use the data in other tools.
 
