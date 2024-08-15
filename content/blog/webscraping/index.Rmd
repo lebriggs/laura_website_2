@@ -117,7 +117,11 @@ To access the Inspect feature:
   
 - **On Mac:** Control-click (or two-finger click on a trackpad) on any part of the webpage and select **Inspect** (or **Inspect Element**) from the context menu.
   
-This will open the browser's developer tools, where you can explore the HTML structure and find the selectors you need. In practice, you might have to experiment with different selectors until you find the ones that work best.
+This will open the browser's developer tools, where you can explore the HTML structure and find the selectors you need (see **Figure 1**). In practice, you might have to experiment with different selectors until you find the ones that work best.
+
+| ![Screenshot of the article's title and its HTML structure in Chrome's Inspect tool](title_inspec.jpg "Article title and HTML structure in the Inspect tool") |
+|:--:|
+| **Figure 1:** Screenshot of the article's title and its HTML structure in Chrome's Inspect tool. |
 
 #### Example: First URL
 
@@ -183,7 +187,7 @@ Alternatively, the selector for the article title (**h1.entry-title**) doesn’t
 
 ```
 
-**CSS Selector:** <br? 
+**CSS Selector:** <br>
 time.entry-date
 
 **Explanation:** <br>
