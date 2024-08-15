@@ -132,6 +132,7 @@ https://tnc.news/2024/01/13/rubenstein-indigenous-science/
 **1. Extracting the Article's Title** <br>
 
 **HTML:**
+Highlight the article's title and right-click to select **Inspect** in your browser (e.g., Chrome). This action reveals the corresponding HTML code for the title (see **Figure 1**).
 
 
 ``` r
@@ -149,6 +150,10 @@ h1.entry-title
 This CSS selector targets the **h1** tag within the header element that has the class **entry-title**. The **h1** tag usually contains the main title of the article. By specifying the **entry-title** class, the selector effectively targets the correct **h1** tag, ensuring that it selects only the main title and avoids any other **h1** tags on the page.
 
 **2. Extracting the Author’s Name** <br>
+
+**HTML:**
+
+Highlight the author’s name and use **Inspect** to view the relevant HTML code. This will help you locate the **a** tag that contains the author’s name.
 
 
 ``` r
@@ -174,6 +179,7 @@ Alternatively, the selector for the article title (**h1.entry-title**) doesn’t
 **3. Extracting the Article's Publication Date** <br>
 
 **HTML:**
+Highlight the publication date and use **Inspect** to find the time tag within the HTML structure.
 
 
 ``` r
@@ -193,6 +199,7 @@ This selector targets the **time** tag with the class **entry-date**, which cont
 **4. Extracting the Article's Content**
 
 **HTML:**
+In the first paragraph of the article, highlight the first sentence and select **Inspect** in your browser. This reveals the HTML structure containing the paragraphs within the **div** element with the class **td-post-content**.
 
 
 ``` r
@@ -201,7 +208,7 @@ This selector targets the **time** tag with the class **entry-date**, which cont
 <div class="td-post-content tagdiv-type">
     <p>Though promoted for decades in Canada’s universities...</p>
     <p>This attack was reinforced Sept. 18 last year...</p>
-    <p>Additional paragraphs...</p>
+    <p>Terming the relation between both...</p>
 </div>
 ```
 
