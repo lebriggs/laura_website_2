@@ -148,12 +148,12 @@ Highlight the article's title and right-click to select **Inspect** in your brow
 h1.entry-title
 
 **Explanation:** <br>
+
 This CSS selector targets the **h1** tag within the header element that has the class **entry-title**. The **h1** tag usually contains the main title of the article. By specifying the **entry-title** class, the selector effectively targets the correct **h1** tag, ensuring that it selects only the main title and avoids any other **h1** tags on the page.
 
 **2. Extracting the Author’s Name** <br>
 
-**HTML:**
-
+**HTML:** <br>
 Highlight the author’s name and use **Inspect** to view the relevant HTML code. This will help you locate the **a** tag that contains the author’s name.
 
 ```{r Author Chunk, echo=TRUE, eval=FALSE}
@@ -172,6 +172,7 @@ Highlight the author’s name and use **Inspect** to view the relevant HTML code
 .td-post-author-name a
 
 **Explanation:** <br>
+
 This selector finds the **a** tag within the **div** that has the class **td-post-author-name**. The **a** tag contains the author’s name and the link to their profile.
 
 The selector starts with a period (**.**) because it is targeting a class (**td-post-author-name**). In CSS, a period (**.**) before a name indicates that it’s a class selector, meaning it will select elements with that class. For example, **.td-post-author-name a** targets an anchor (**a**) tag within any element that has the **td-post-author-name** class.
@@ -180,7 +181,7 @@ Alternatively, the selector for the article title (**h1.entry-title**) doesn’t
 
 **3. Extracting the Article's Publication Date** <br>
 
-**HTML:**
+**HTML:** <br>
 Highlight the publication date and use **Inspect** to find the time tag within the HTML structure.
 
 ```{r Date Chunk, echo=TRUE, eval=FALSE}
@@ -197,11 +198,12 @@ Highlight the publication date and use **Inspect** to find the time tag within t
 time.entry-date
 
 **Explanation:** <br>
+
 This selector targets the **time** tag with the class **entry-date**, which contains the publication date of the article. In the HTML snippet, the **time** tag has additional classes, **updated** and **td-module-date**. However, specifying just the **entry-date** class is sufficient because it uniquely identifies the correct **time** tag. This approach keeps the selector flexible and less likely to break if the other classes change; thus, ensuring accurate extraction of the publication date.
 
 **4. Extracting the Article's Content**
 
-**HTML:**
+**HTML:** <br>
 In the first paragraph of the article, highlight the first sentence and select **Inspect** in your browser. This reveals the HTML structure containing the paragraphs within the **div** element with the class **td-post-content**.
 
 ```{r Content Chunk, echo=TRUE, eval=FALSE}
@@ -220,14 +222,15 @@ In the first paragraph of the article, highlight the first sentence and select *
 div.td-post-content p
 
 **Explanation:** <br>
+
 This selector finds all **p** tags within the **div** element that has the class **td-post-content**. Each **p** tag represents a paragraph in the article. The selector **div.td-post-content p** is effective because it selects all paragraph tags within the main content area, allowing you to extract the full text of the article.
 
 You might wonder why we need the **div** element in this selector when we didn't need it for **.td-post-author-name a**, which targets the author’s name. The reason lies in the specificity and context of what we’re trying to extract.
 
-- **Author Name (.td-post-author-name a):**  
+- **Author Name (.td-post-author-name a):** <br> 
 This selector targets the **a** tag within any element that has the class **td-post-author-name**. The class **td-post-author-name** sufficiently narrows down the location of the **a** tag, ensuring accurate selection without needing additional specificity, such as including the **div** element.
 
-- **Article Content (div.td-post-content p):**  
+- **Article Content (div.td-post-content p):**  <br>  
 For the article content, we need to select all **p** (paragraph) tags within a specific **div** element that has the class **td-post-content**. The **div** acts as a container for the content, and the paragraphs are nested within it. Including the **div** element in the selector ensures that we're targeting paragraphs specifically from the main content area and not inadvertently selecting paragraphs from other parts of the page, such as the header, footer, or sidebar.
 
 ### Error Handling Explained
