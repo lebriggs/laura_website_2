@@ -1,6 +1,6 @@
 ---
 title: "Web Scraping In R"
-subtitle: "Part 1"
+subtitle: "Part 1 Of 2"
 author: Laura Briggs
 show_author_byline: true
 date: "2024-08-15"
@@ -106,7 +106,7 @@ A **CSS selector** is a pattern that targets specific HTML elements based on the
 
 We’ll use the first "real" article's URL from the script as our example and break down each selector to explain why it works and how it helps us gather the necessary data.
 
-- **Inspect Feature:** <br>
+**Inspect Feature:** <br>
 Use your Internet browser's **Inspect** feature to identify the elements you want to scrape and their associated classes or tags. 
 
 To access the Inspect feature:
