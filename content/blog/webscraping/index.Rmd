@@ -317,7 +317,7 @@ Once you’ve integrated the CSS selectors into the scraping function, it’s ti
 
 Whew! We’ve covered a lot of material in this blog post— everything from the importance of ethical and responsible web scraping to identifying and using CSS selectors in your R code. However, I am leaving a few discussion topics for a second post, such as error handling, saving the scraped data, and potential future improvements for the script.
 
-If you’re thinking, “Wait, that’s it? What about the rest?” I can almost hear Deadpool satirically critique my lack of effort:
+If you’re thinking, “Wait, that’s it? What about the rest?”, you’re not alone— I can almost hear Deadpool satirically critiquing my lack of effort:
 
 ---
 
