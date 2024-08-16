@@ -253,7 +253,7 @@ First, we’ll define the CSS selectors in our R script. This means creating var
 
 ```{r CSS Variables Chunk, echo=TRUE, eval=FALSE}
 
-# Define CSS Variables for each element we want to scrape
+# Define CSS variables for each element we want to scrape.
 
 title_selector <- "h1.entry-title"           # CSS selector for the article's title
 author_selector <- ".td-post-author-name a"  # CSS selector for the author's name
@@ -271,6 +271,8 @@ Next, we’ll integrate these selectors into our scraping function. This is wher
 Here’s the part of the scraping function that uses the CSS selectors:
 
 ```{r CSS Selectors Chunk, echo=TRUE, eval=FALSE}
+
+# This code shows how the scraping function uses CSS selectors to extract specific elements from a webpage.
 
 scrape_page <- function(url) {
   # Read the HTML content of the page

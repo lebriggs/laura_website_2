@@ -249,7 +249,7 @@ First, we’ll define the CSS selectors in our R script. This means creating var
 
 
 ``` r
-# Define CSS Variables for each element we want to scrape
+# Define CSS variables for each element we want to scrape.
 
 title_selector <- "h1.entry-title"           # CSS selector for the article's title
 author_selector <- ".td-post-author-name a"  # CSS selector for the author's name
@@ -267,6 +267,8 @@ Here’s the part of the scraping function that uses the CSS selectors:
 
 
 ``` r
+# This code shows how the scraping function uses CSS selectors to extract specific elements from a webpage.
+
 scrape_page <- function(url) {
   # Read the HTML content of the page
   page <- rvest::read_html(url, encoding = "UTF-8")  # Load the webpage with UTF-8 encoding
