@@ -1,6 +1,6 @@
 ---
 title: "Web Scraping In R"
-subtitle: ""
+subtitle: "Part 1"
 author: Laura Briggs
 show_author_byline: true
 date: "2024-08-15"
@@ -24,11 +24,10 @@ tags:
 - "post_id: 012"
 - "R tutorial"
 - "Web scraping"
+- "CSS selectors"
 ---
 
 ## This post is in the process of being written. Stay tuned! 
-
-### *Cue suspenseful music.* 
 
 ### Overview
 
@@ -228,21 +227,30 @@ This selector targets the **a** tag within any element that has the class **td-p
 - **Article Content (div.td-post-content p):** <br>
 For the article content, we need to select all **p** (paragraph) tags within a specific **div** element that has the class **td-post-content**. The **div** acts as a container for the content, and the paragraphs are nested within it. Including the **div** element in the selector ensures that we're targeting paragraphs specifically from the main content area and not inadvertently selecting paragraphs from other parts of the page, such as the header, footer, or sidebar.
 
-### Error Handling Explained
+#### Example: Articles 2 And 3
 
-Discuss the built-in error handling in the script, how it manages network issues and missing data, and why it’s important.
+Repeat the process for [Article 2](https://tnc.news/2024/02/12/a-map-of-every-church-burnt-or-vandalized-since-the-residential-school-announcements4/) 
+and [Article 3](https://tnc.news/2024/03/06/stop-releasing-racist-crime-statistics/), comparing the title, author, date, and content elements to those identified in the first article. You’ll find that the CSS selectors are consistent across these articles, which makes the process straightforward and reliable. This consistency is one reason why this website serves as a useful example for learning the basics of web scraping. However, when you work on your own projects, it’s important to experiment with different selectors, as the HTML structure can vary between websites and even between pages on the same site. By adjusting your selectors, you can ensure that you accurately capture the data you need, even when the structure is inconsistent.
 
-### Saving And Analyzing The Data
+### Integrating The CSS Selectors Into The R Script
 
-Describe how the scraped data is saved into a CSV file and suggest ways to analyze or use the data in other tools.
+Coming soon.
 
-### Future Improvements
+### That’s A Wrap... Until The Sequel
 
-Explore potential enhancements to the script, such as adding new features, improving performance, or integrating with other tools.
+Whew! We’ve covered a lot of material in this blog post— everything from the importance of ethical and responsible web scraping to identifying and using CSS selectors in your R code. But I am leaving a few topics for later, such as error handling, saving the scraped data, and potential future improvements for the script.
 
-### Conclusion
+If you’re thinking, “Wait, that’s it? What about the rest?” I can almost hear Deadpool satirically critique my lack of effort:
 
-Summarize the key takeaways from the post, and encourage readers to try out the script or suggest further developments.
+---
+
+> **Well, that’s just lazy writing.**
+
+— Deadpool, breaking the fourth wall to complain about Cable’s inability to travel back in time and stop Russell as a baby (*Deadpool 2*, 2018).
+
+---
+
+Don’t worry, we’ll cover the rest in Part 2. Stay tuned!
 
 ### Contact
 
@@ -250,4 +258,4 @@ For questions or feedback about this tutorial, please [contact me](/contact). I 
 
 ### Subscribe To New Blog Posts
 
-If you would like to be notified when I sporadically publish a new blog post then please subscribe using [this tiny form](https://dashboard.mailerlite.com/forms/1012938/126123917064537119/share). 
+If you would like to be notified when the sequel to this web scraping post is published, then subscribe using [this tiny form](https://dashboard.mailerlite.com/forms/1012938/126123917064537119/share). 
