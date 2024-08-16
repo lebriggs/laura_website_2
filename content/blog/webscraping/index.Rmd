@@ -134,7 +134,7 @@ The following article will be used to demonstrate how to extract the title, auth
 
 Article 1: https://tnc.news/2024/01/13/rubenstein-indigenous-science/
 
-**Step 1:** **Extracting the Article's Title** <br>
+#### **Step 1:** **Extract the Article's Title** <br>
 
 **HTML** <br>
 Highlight the article's title and right-click to select **Inspect** in your browser (e.g., Chrome). This action reveals the corresponding HTML code for the title (see **Figure 1**).
@@ -156,7 +156,7 @@ h1.entry-title
 
 This CSS selector targets the **h1** tag within the header element that has the class **entry-title**. The **h1** tag usually contains the main title of the article. By specifying the **entry-title** class, the selector effectively targets the correct **h1** tag, ensuring that it selects only the main title and avoids any other **h1** tags on the page.
 
-**Step 2:** **Extracting the Author’s Name** <br>
+#### **Step 2:** **Extract the Author’s Name** <br>
 
 **HTML** <br>
 Highlight the author’s name and use **Inspect** to view the relevant HTML code. This will help you locate the **a** tag that contains the author’s name.
@@ -184,7 +184,7 @@ The selector starts with a period (**.**) because it is targeting a class (**td-
 
 Alternatively, the selector for the article title (**h1.entry-title**) doesn’t start with a period (**.**) because it begins with the **h1** tag itself. This selector first targets the **h1** tag, which is an HTML element, and then filters those **h1** tags down to only those that have the **entry-title** class. By targeting the **a** tag within this **div** class, the selector effectively captures the author’s name. The author’s name is always found in this **a** tag on the site.
 
-**Step 3:** **Extracting the Article's Publication Date** <br>
+#### **Step 3:** **Extract the Article's Publication Date** <br>
 
 **HTML** <br>
 Highlight the publication date and use **Inspect** to find the time tag within the HTML structure.
@@ -206,7 +206,7 @@ time.entry-date
 
 This selector targets the **time** tag with the class **entry-date**, which contains the publication date of the article. In the HTML snippet, the **time** tag has additional classes, **updated** and **td-module-date**. However, specifying just the **entry-date** class is sufficient because it uniquely identifies the correct **time** tag. This approach keeps the selector flexible and less likely to break if the other classes change; thus, ensuring accurate extraction of the publication date.
 
-**Step 4:** **Extracting the Article's Content**
+#### **Step 4:** **Extract the Article's Content**
 
 **HTML** <br>
 In the first paragraph of the article, highlight the first sentence and select **Inspect** in your browser. This reveals the HTML structure containing the paragraphs within the **div** element with the class **td-post-content**.
@@ -247,7 +247,7 @@ and [Article 3](https://tnc.news/2024/03/06/stop-releasing-racist-crime-statisti
 
 This section will guide you through setting up the CSS selectors and incorporating them into your scraping function to accurately extract the elements you need from each article. It corresponds to **Part III, Step 2** of the script, where we'll focus on using the previously identified selectors to pull key data points like the title, author, date, and content.
 
-**Step 1:** **Set Up the Selectors** <br>
+#### **Step 1:** **Set Up the Selectors**
 
 First, we’ll define the CSS selectors in our R script. This means creating variables for each selector, so it’s easy to reference them later in the code. For example:
 
@@ -264,7 +264,7 @@ content_selector <- "div.td-post-content p"  # CSS selector for the article's co
 
 By setting up these selectors as variables, we make our code more organized and easier to modify later if needed.
 
-**Step 2:** **Incorporate the Selectors into the Scraping Function**
+#### **Step 2:** **Incorporate the Selectors into the Scraping Function**
 
 Next, we’ll integrate these selectors into our scraping function. This is where the magic happens! We’ll update the function to use the selectors, so the script knows exactly which elements to pull from each page.
 
