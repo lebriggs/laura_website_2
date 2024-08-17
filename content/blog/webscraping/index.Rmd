@@ -15,7 +15,7 @@ links:
 - icon: github-square
   icon_pack: fab
   name: R SCRIPT
-  url: "https://gist.github.com/lebriggs/e580ff7ad7b825ace776efd5dc946733"
+  url: "https://gist.github.com/lebriggs/7ed657757e00429a2a8688f2584f8b5d"
 categories:
 - "Blog"
 - "R Code"
