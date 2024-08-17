@@ -4,7 +4,7 @@ subtitle: "Part 1 of 2"
 author: Laura Briggs
 show_author_byline: true
 date: "2024-08-15"
-draft: false
+draft: true
 excerpt: |
   This R script effortlessly scrapes multiple articles from a website, 
   neatly gathering titles, dates, authors, and content into a tidy CSV file. 
@@ -74,9 +74,31 @@ Written at a lower intermediate level, the script features detailed comments and
 
 You can access the script by clicking on the **R SCRIPT** button, which is located just below the date at the top of the page. The link will take you to a GitHub Gist page.
 
-### Practice Responsible Scraping
+### Practice Ethical And Responsible Scraping
 
-Coming soon! Explain the importance of responsible web scraping, including the use of delays between requests and adherence to website policies.
+Web scraping or text mining is really a discussion about access to online information— how to responsibly collect data from the web while respecting the resources and rights of the sites you're scraping from. Just a quick reminder: I’m a librarian, not a lawyer. So, while I can offer insights into ethical practices, this blog post doesn’t provide legal advice—j ust like watching *My Cousin Vinny* won’t make you a criminal defense attorney.
+
+It’s important to recognize that the information you’re collecting has value— not just to you, but also to the website owners. Understanding these principles is essential for anyone looking to responsibly gather data online. The section that follows will touch on the tricky ethics of web scraping. However, this is just an overview, as the topic could easily warrant a full blog post on its own.
+
+#### Three Important Considerations for Responsible Web Scraping
+
+1. **Adherence to Website Policies and Licenses** <br>
+
+Always check a website’s robots.txt file, terms of service, and any applicable content licenses. These documents usually outline what is and isn’t allowed when it comes to scraping. For example, a website might block certain bots or set a crawl delay, like mine does in its [robots.txt](https://lebriggs.com/robots.txt) file. I also like to include a note in my R script with the date I last checked for any prohibitive policies, since terms of service can change over time. Disregarding these guidelines can lead to legal issues and is likely considered unethical in the data science community.
+
+2. **Use of Delays Between Requests** <br>
+
+Web servers can only handle so much simultaneous traffic. To avoid overwhelming the server, include delays between your requests. For example, in our script, we use a delay of 5 seconds between each request. A good guide is to scrape slowly and thoughtfully.
+
+3. **Minimize Data Collection** <br>
+
+Only collect the data you actually need. This not only reduces the load on the server but also aligns with ethical principles of data minimization, ensuring that you’re not hoarding unnecessary information. As James Densmore (2017) succinctly stated, "I will only save the data I absolutely need from your page" [(*Towards Data Science*)](https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01).
+
+#### But Wait, There’s More
+
+And I haven’t even waded into the mire of how copyright laws apply. See? I told you it was a tricky topic. For a gentle introduction to the legalities of web scraping, including the complexities of copyright, see Asmit Joshi's (2021) *Medium* [article](https://medium.com/grepsr-blog/legality-of-web-scraping-an-overview-3cf415885e16). Joshi also mentions the famous *eBay vs. Bidder’s Edge* (2000) case— one of the reasons you’ll often see web scraping posts tagged as "Trespass to Chattels."
+
+But don’t worry, I’m not about to dive into all that right now (this blog post is already too long!). This is just the start of a much deeper conversation that I have with students and researchers.
 
 ### Getting Started With The Script
 
