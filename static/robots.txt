@@ -1,0 +1,15 @@
+# robots.txt file for https://lebriggs.com
+
+# Block these bots due to aggressive crawling behaviour
+User-agent: GPTBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Set a crawl delay of 5 seconds between requests for everyone
+User-agent: *
+Crawl-delay: 5
