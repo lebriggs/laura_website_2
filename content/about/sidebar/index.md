@@ -9,12 +9,12 @@ link_list_label: "Meet Laura" # bookmarks, elsewhere, etc.
 link_list:
 - name: My Bio
   url: /bio/
-- name: What I'm Supporting
-  url: http://support.myeloma.ca/goto/laura_briggs
-- name: What I'm Drinking
-  url: https://www.instagram.com/p/C7r0NAmRPit/?igsh=OGc1Z3hoOTB4Mzht
+- name: What I'm Learning
+  url: https://www.lucidchart.com/blog/creating-layers-in-lucidchart
+- name: What I'm Watching
+  url: https://kinolorber.com/film/green-border
 - name: What I'm Reading
-  url: https://www.goodreads.com/book/show/59742002-levon-s-night
+  url: https://www.goodreads.com/book/show/22668066-the-dead-walk-the-earth
 ---
 
 ** index doesn't contain a body, just front matter above.
