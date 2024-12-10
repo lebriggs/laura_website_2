@@ -9,7 +9,7 @@ intro: |
   Curious about the future topics coming to my blog? Here's a sneak peek!<br>
   <br>
   <ul>
-    <li><b>Tutorial for Scraping Multiple Pages:</b> Learn how to scrape multiple pages from a website using R. Enhance your data science skills with this practical guide.</li>
+    <li><b>Transcript Anonymizer:</b> A dive into transcript anonymization with R! Part 1 showcases a rule-based script packed with FAIR principles (and SO MUCH regex). Part 2 explores machine learning for a more flexible and adaptive approach. </li>
     <br>
     <li><b>YAML Front Matter Updater:</b> The second draft of my R script for updating the YAML front matter of Markdown files. It's part of an ongoing project that I am toiling away on when I can't find anything to watch on Netflix. I promise to integrate a Deadpool quotation into each update!</li>
     <br>
